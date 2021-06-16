@@ -3,9 +3,9 @@ Group Name: Covineers
         Add Screenshot of all VM logs on the centralized log server
 
             1. Here is an image of all VMs respective IPv4 addresses.
-            
-            ![image](https://user-images.githubusercontent.com/70596795/122139861-e8309600-ce17-11eb-87d9-918c34b1c48c.png)
+            ![24735c231d7bcb00ca6baa573a829c9c](https://user-images.githubusercontent.com/70596795/122140127-73aa2700-ce18-11eb-87e4-663d3876816e.png)
 
+            
             2. The contents inside one of the VMS. 
 
         Briefly explain what solutions you explored (and who explored them)?

@@ -31,9 +31,13 @@ Group Name: Covineers
               
               3.Add Template for remote logs - Saves in /var/log with the Hostname (IPV4) then inside each log named after the program. 
                 &~ stops processing after recieving logs. 
- ![61fdd2a08db42589ddeea19a38c8cffd](https://user-images.githubusercontent.com/70596795/122134057-e660d580-ce0b-11eb-9fa9-538a12b636cd.png
+                
+![template setting](https://user-images.githubusercontent.com/70596795/122142408-63487b00-ce1d-11eb-9dc2-8a59de6f2afe.png)
+
+
               4. Open port on AWS security group for inbound, all IPS (should be only VMS) and on port 514. 
- ![922ae4347c5a6669aed6571ed7fce8a8](https://user-images.githubusercontent.com/70596795/122134709-2aa0a580-ce0d-11eb-9e04-42f10cd58f35.png)
+              
+![922ae4347c5a6669aed6571ed7fce8a8](https://user-images.githubusercontent.com/70596795/122134709-2aa0a580-ce0d-11eb-9e04-42f10cd58f35.png)
 
                 
               Client Setup: 

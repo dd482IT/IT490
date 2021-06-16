@@ -22,10 +22,12 @@ Group Name: Covineers
                 We all did the same exact reasearch and setup in one call. 
                 
             Daniel Daszkiewicz: 
-                Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Server. 
+                Rsyslog offers high performance, is rather light in performance and accepts inputs from a variety of sources. 
+                All it took to start working were a few lines of confiugration which is the main
+                reason we chose to use it. However, if we want more filters or inputs something like logstash can be used.   
                 
             Adem Coklar: 
-                Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                I found that NXLog had too many extra features provided that are related to security. We are deciding on rsyslog as it was easier to setup and didn’t require the                     extra components NXLog has. 
                 
             Andrew Kinzler: 
                 Looked into Graylog. GrayLog Open is a free centralized logging software solution offered by Graylog. 

@@ -4,8 +4,9 @@ Group Name: Covineers
 
             1. Here is an image of all VMs respective IPv4 addresses.
             
-            
-            <img src="https://user-images.githubusercontent.com/70596795/122140461-5164d900-ce19-11eb-848b-0de9395898ab.png">
+          
+![listOfIpsandLogs](https://user-images.githubusercontent.com/70596795/122142113-bec63900-ce1c-11eb-8d79-2ec0d0cb1d56.png)
+
 
 
 

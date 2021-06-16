@@ -23,7 +23,10 @@ Group Name: Covineers
                 
                 Daniel Daszkiewicz: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Server. 
                 Adem Coklar: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
-                Andrew Kinzler: Looked into Graylog. GrayLog Open is a free centralized logging software solution offered by Graylog. It provides the user with a custom dashboard     that would have allowed us to quickly search and filter through our logs. However, we instead choose to go with rsyslog because the group decided that rsyslog was easier to setup and we did not think the extra work was worth it for the advanced dashboard, the searching functionality nor the security features. 
+                Andrew Kinzler: Looked into Graylog. GrayLog Open is a free centralized logging software solution offered by Graylog. 
+                It provides the user with a custom dashboard that would have allowed us to quickly search and filter through our logs. 
+                However, we instead choose to go with rsyslog because the group decided that rsyslog was easier to setup and we did not think the extra work was worth it for the 
+                advanced dashboard, the searching functionality nor the security features. 
                 Kevin Delgado: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
                 Paytrk Ziemba: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
                 Tyler Raymod: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 

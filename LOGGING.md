@@ -28,6 +28,8 @@ Group Name: Covineers
                 Paytrk Ziemba: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
                 Tyler Raymod: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
                 
+                Rsyslog was also already included in our VMs so it was just the much simpler option.
+                
                 Will do more research using link: https://www.tecmint.com/open-source-centralized-linux-log-management-tools/
                 
 

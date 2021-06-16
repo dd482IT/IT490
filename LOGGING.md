@@ -9,6 +9,8 @@ Group Name: Covineers
 
             
             2. The contents inside one of the VMS. 
+![listsOfLogs](https://user-images.githubusercontent.com/70596795/122259348-16f24f00-cea0-11eb-958e-4e1b72c52d02.png)
+
 
         Briefly explain what solutions you explored (and who explored them)?
         
@@ -16,6 +18,18 @@ Group Name: Covineers
                on rsyslog and completed the setup together. No further research was done.
                 
                 https://www.youtube.com/watch?v=mBJ8JfJnlXQ
+                
+                We all did the same exact reasearch and setup in one call. 
+                
+                Daniel Daszkiewicz: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Server. 
+                Adem Coklar: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                Andrew Kinzler: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                Kevin Delgado: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                Paytrk Ziemba: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                Tyler Raymod: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                
+                Will do more research using link: https://www.tecmint.com/open-source-centralized-linux-log-management-tools/
+                
 
         Explain what your group went with and how you went about implementing it (write this in the level of detail you’d tell a fellow group member to follow, points    may be deducted if it’s not well thought out)
 

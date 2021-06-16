@@ -23,11 +23,12 @@ Group Name: Covineers
                 
                 Daniel Daszkiewicz: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Server. 
                 Adem Coklar: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
-                Andrew Kinzler: Looked into Graylog. GrayLog Open is a free centralized logging software solution offered by Graylog. 
-                It provides the user with a custom dashboard that would have allowed us to quickly search and filter through our logs. 
-                However, we instead choose to go with rsyslog because the group decided that rsyslog was easier to setup and we did not think the extra work was worth it for the 
-                advanced dashboard, the searching functionality nor the security features. 
-                Kevin Delgado: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                Andrew Kinzler: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                Kevin Delgado: Looked into a network monitoring and log management tool called LOGalyze. Was a solution available on Linux and Windows
+                hosts that would collect and parse through log information on the network devices it happened to be configured on. Its main utilization
+                appeared to be for analzying server and application logs that would then export to formats of choice (PDF, CSV, HTML). The extra features
+                it had didn't seem to offer us any value for our usecase. More importantly, the tool has reach EOL and is no longer available which led
+                us to look elsewhere and find a solution in RSYSLOG which we ended up choosing for out logging purposes.
                 Paytrk Ziemba: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
                 Tyler Raymod: Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
                 

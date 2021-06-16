@@ -68,6 +68,14 @@ Group Name: Covineers
               3. Lastly, a test can be done using command $ logger "Test" 
 
                 
+ The Rejects Pile:
+
+Elastic Stack:
+•	Three in one tool for centralized logging
+•	Logstash collects all logs into desired output
+•	Elasticsearch “search engine” for logs
+•	Kibana WebUI visualization for the logs (bar graphs, pie charts, etc.)
+•	Too many unnecessary components that we would not be using  
 
                 
 

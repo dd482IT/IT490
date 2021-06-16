@@ -2,7 +2,11 @@ Group Name: Covineers
 
         Add Screenshot of all VM logs on the centralized log server
 
-            1. Here is an image of all IP
+            1. Here is an image of all VMs respective IPv4 addresses.
+            
+            ![24735c231d7bcb00ca6baa573a829c9c](https://user-images.githubusercontent.com/70596795/122139861-e8309600-ce17-11eb-87d9-918c34b1c48c.png)
+
+            2. The contents inside one of the VMS. 
 
         Briefly explain what solutions you explored (and who explored them)?
         
@@ -20,7 +24,9 @@ Group Name: Covineers
               1. Edit /etc/rsyslog.conf
               2. Add lines $ModLoad imudp and $UDPServerRun 514
                   This tells rsyslog to run using proctol on UDP using port 514
+                  
               ![](https://user-images.githubusercontent.com/70596795/122135028-c3cfbc00-ce0d-11eb-8fcb-77c0c762c77f.png)
+              
               3.Add Template for remote logs - Saves in /var/log with the Hostname (IPV4) then inside each log named after the program. 
                 &~ stops processing after recieving logs. 
                 ![61fdd2a08db42589ddeea19a38c8cffd](https://user-images.githubusercontent.com/70596795/122134057-e660d580-ce0b-11eb-9fa9-538a12b636cd.png

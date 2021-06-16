@@ -49,7 +49,9 @@ Group Name: Covineers
                          •	Too many unnecessary components that we would not be using  
                 
             Tyler Raymod: 
-                Looked into AWS and rsyslog. Rsyslog was used because it was much simpler when compared to AWS CL. Setup Rsyslog Client. 
+                Fluentd is an open source log monitoring tool written in C
+                Structures the data in JSON for easy filtering and parsing
+                Low on resources and has hundreds of community plugins that we probably wouldnt use
                 
                 Rsyslog was also already included in our VMs so it was just the much simpler option.
 -----------------------------------------------------------------------------------------------------------------------------------------------

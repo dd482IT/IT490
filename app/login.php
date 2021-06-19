@@ -1,4 +1,5 @@
 <?php
+require_once(__DIR__ . "/nav.php");
 require(__DIR__."/MQPublish.inc.php");
 session_start();
 ?>

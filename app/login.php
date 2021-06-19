@@ -3,6 +3,7 @@ require_once(__DIR__ . "/nav.php");
 require(__DIR__."/MQPublish.inc.php");
 session_start();
 ?>
+
 <form method="POST">
 <input type="text" name="username"/>
 <input type="password" name="password"/>
@@ -10,9 +11,11 @@ session_start();
 </form>
 
 <?php
+
+
 if(isset($_POST["submit"])){
 	$username = $_POST["username"];
-	$password = $_POST["password"];
+	$password = $_POST["password"]; 
 	//TODO validate
 
 	//calls function from MQPublish.inc.php to communicate with MQ
@@ -26,3 +29,5 @@ if(isset($_POST["submit"])){
 
 }
 ?>
+
+

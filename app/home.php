@@ -1,4 +1,4 @@
-<?php require_once(__DIR__ . "nav.php"); ?>
+<?php require_once(__DIR__ . "/nav.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">

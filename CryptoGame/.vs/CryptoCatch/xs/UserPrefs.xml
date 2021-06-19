@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{BC1CDB0E-B0C6-CD2F-09BD-35935B2DA744}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RoadConstruct.cs">
+    <Files>
+      <File FileName="Assets/camControl.cs" Line="11" Column="1" />
+      <File FileName="Assets/camMove.cs" Line="5" Column="21" />
+      <File FileName="Assets/RoadConstruct.cs" Line="87" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CryptoCatch" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="RoadConstruct.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e7dd5f8b-3101-4b60-9daf-fc7a2d140cea" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

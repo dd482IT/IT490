@@ -1,0 +1,23 @@
+# Made using Asset Forge (2.2.0)
+
+:materials
+
+[name:wood;color:RGBA(0.641, 0.641, 0.641, 1.000);scale:(1.0, 1.0);texture:Stone/greybricks;shader:Default;valueA:0.3;valueB:1;]
+[name:stone;color:RGBA(0.286, 0.282, 0.353, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+[name:custom2;color:RGBA(0.070, 0.070, 0.070, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0.15;]
+[name:custom3;color:RGBA(1.000, 0.994, 0.000, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0.15;]
+[name:custom4;color:RGBA(0.095, 0.555, 0.031, 1.000);scale:(1.0, 1.0);texture:Nature/grass.png;shader:Default;valueA:0.2;valueB:0.9;]
+
+:models
+
+[name:;collection:Western;type:porch_floorCenter;position:(-2.0000, 0.1000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(1.0000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:wood;]
+[name:;collection:Western;type:porch_floorCenter;position:(-1.0000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(1.0000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom2;]
+[name:;collection:Western;type:porch_floorCenter;position:(2.0000, 0.1000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(1.0000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:wood;]
+[name:;collection:Western;type:porch_floorCenter;position:(-0.2000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(0.2000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom3;]
+[name:;collection:Western;type:porch_floorCenter;position:(0.4000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(0.2000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom2;]
+[name:;collection:Western;type:porch_floorCenter;position:(0.0000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(0.2000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom2;]
+[name:;collection:Western;type:porch_floorCenter;position:(-0.4000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(0.2000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom2;]
+[name:;collection:Western;type:porch_floorCenter;position:(1.0000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(1.0000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom2;]
+[name:;collection:Western;type:porch_floorCenter;position:(0.2000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(0.2000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom3;]
+[name:;collection:Western;type:porch_floorCenter;position:(5.0000, 0.1000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(5.0000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom4;]
+[name:;collection:Western;type:porch_floorCenter;position:(-5.0000, 0.1000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(5.0000, 1.0000, 3.0000);group:;locked:False;hidden:False;materials:custom4;]

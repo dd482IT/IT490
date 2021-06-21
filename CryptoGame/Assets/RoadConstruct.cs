@@ -4,30 +4,34 @@ using UnityEngine;
 
 public class RoadConstruct : MonoBehaviour
 {
-    //Spawn Values
-    public int CreditSpawnRate = 3;
-    public int TallBlockSpawnRate = 3;
+    //Game Values
+    public int difficulty = 1;
+
 
     //Object Calls
 
-    public Transform roadObj;
-    private Vector3 nextRoad;
+    public Transform roadTile;
+    private Vector3 nextRoadTile;
 
-    public Transform roadBlockObj;
+    public Transform roadBlockShort;
+    public Transform roadBlockTall;
+
     private Vector3 nextRoadBlock;
 
-    public Transform tallRoadBlockObj;
-    private Vector3 nextTallRoadBlock;
+   
 
-    public Transform creditObj;
+    public Transform credit;
     private Vector3 nextCredit;
-
-    private int randX;
+    private float timeToLive;
 
 
     void Start()
     {
-        nextRoad.z = 24;
+        nextRoadTile.z = 21;
+        nextRoadBlock.z = 20;
+        nextCredit.z = 21.5f;
+
+
         StartCoroutine(spawnTile());
     }
 
@@ -36,53 +40,90 @@ public class RoadConstruct : MonoBehaviour
 
     }
 
+
+
     IEnumerator spawnTile()
     {
-        //Road Tile Spawner
-        yield return new WaitForSeconds(1);
-        Instantiate(roadObj, nextRoad, roadObj.rotation, transform);
-        nextRoad.z += 3;
-
-        //Credit and Road BLOCK spawner
-
-        if (Random.Range(0, CreditSpawnRate) == 1)
+        yield return new WaitForSeconds(.5f);
+        switch (difficulty)
         {
-            randX = Random.Range(-1, 2);
-            nextCredit = nextRoad;
-            nextCredit.y = .5f;
-            nextCredit.x = randX;
-            Instantiate(creditObj, nextCredit, creditObj.rotation, transform);
+            case 0:
+                // EASY MODE
+                spawnRoad();
+                spawnBlock(5);
+                spawnCredit(3);
+                timeToLive = 3f;
+                break;
+
+            case 1:
+                // NORMAL MODE
+                spawnRoad();
+                spawnRoad();
+                spawnBlock(3);
+                spawnCredit(5);
+                timeToLive = 3f;
+                break;
+
+            case 2:
+                // HARD MODE
+                spawnRoad();
+                spawnRoad();
+                spawnRoad();
+                spawnBlock(2);
+                spawnCredit(5);
+                timeToLive = 2f;
+                break;
+        }
+        StartCoroutine(spawnTile());
+    }
+
+
+
+
+
+
+    // SPAWNING FUNCTIONS 
+    void spawnRoad()
+    {
+        Destroy(Instantiate(roadTile, nextRoadTile, roadTile.rotation, transform).gameObject, timeToLive);
+        nextRoadTile.z += 3;
+
+    }
+
+    void spawnBlock(int tallSpawnRate)
+    {
+        if (Random.Range(1, tallSpawnRate) == 1)
+        {
+            nextRoadBlock.x = Random.Range(-1, 2);
+            nextRoadBlock.z += 3;
+            nextRoadBlock.y = .1f;
+
+            Destroy(Instantiate(roadBlockTall, nextRoadBlock, roadBlockTall.rotation, transform).gameObject, timeToLive);
+
+
         }
         else
         {
-            if (Random.Range(0, TallBlockSpawnRate) == 1)
-            {
-                randX = Random.Range(-2, 1);
-                nextTallRoadBlock = nextRoad;
-                nextTallRoadBlock.y = .1f;
-                nextTallRoadBlock.x = randX;
-                Instantiate(tallRoadBlockObj, nextTallRoadBlock, tallRoadBlockObj.rotation, transform);
-            }
-            else
-            {
-                randX = Random.Range(-2, 1);
-                nextRoadBlock = nextRoad;
-                nextRoadBlock.y = .1f;
-                nextRoadBlock.x = randX;
-                Instantiate(roadBlockObj, nextRoadBlock, roadBlockObj.rotation, transform);
-
-                if (Random.Range(0, 2) == 1)
-                {
-                    randX = Random.Range(-2, 1);
-                    nextRoadBlock = nextRoad;
-                    nextRoadBlock.y = .1f;
-                    nextRoadBlock.z += 1.5f;
-                    nextRoadBlock.x = randX;
-                    Instantiate(roadBlockObj, nextRoadBlock, roadBlockObj.rotation, transform);
-                }
-            }
+            nextRoadBlock.x = Random.Range(-1, 2);
+            nextRoadBlock.z += 3;
+            nextRoadBlock.y = .1f;
+            Destroy(Instantiate(roadBlockShort, nextRoadBlock, roadBlockShort.rotation, transform).gameObject, timeToLive);
         }
+    }
 
-        StartCoroutine(spawnTile());
+
+    void spawnCredit(int creditSpawnRate)
+    {
+        if (Random.Range(1, creditSpawnRate) == 1)
+        {
+            nextCredit = nextRoadBlock;
+            nextCredit.x = Random.Range(-1, 2);
+            nextCredit.z += 1.5f;
+            nextCredit.y = .5f;
+
+
+            Destroy(Instantiate(credit, nextCredit, credit.rotation,transform).gameObject, timeToLive);
+
+        }
     }
 }

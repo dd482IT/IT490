@@ -598,12 +598,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1278594d90b684cfe83c2d9429ddab08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CreditSpawnRate: 4
-  TallBlockSpawnRate: 2
-  roadObj: {fileID: -8679921383154817045, guid: c6b8eff45c18c469aaa16d2933a2511f, type: 3}
-  roadBlockObj: {fileID: -8679921383154817045, guid: cb3a013e798754079a714b4ea7940500, type: 3}
-  tallRoadBlockObj: {fileID: -8679921383154817045, guid: 907328881a89849df992a69eb1596d66, type: 3}
-  creditObj: {fileID: -8679921383154817045, guid: a60ee32ccba4d44c7ac776a6fda35c6c, type: 3}
+  difficulty: 0
+  roadTile: {fileID: 4938749396942017275, guid: 01f98aff934d444e4a8b8362e21c1d92, type: 3}
+  roadBlockShort: {fileID: -8679921383154817045, guid: c296dd8d1f71c4c4c985f0ab058ef90f, type: 3}
+  roadBlockTall: {fileID: -8679921383154817045, guid: 38bc861d869f8434ebbfe15cd3cf798e, type: 3}
+  credit: {fileID: -8679921383154817045, guid: a60ee32ccba4d44c7ac776a6fda35c6c, type: 3}
 --- !u!4 &1454002518
 Transform:
   m_ObjectHideFlags: 0

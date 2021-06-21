@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{3688D593-CAC5-6FE6-775C-80F8EC4AEDFE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/camMove.cs">
+    <Files>
+      <File FileName="Assets/RoadConstruct.cs" Line="33" Column="29" />
+      <File FileName="Assets/camMove.cs" Line="9" Column="65" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CryptoGame" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f0eb4a4b-acc4-4c4e-9834-ef131b8b7487" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

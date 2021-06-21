@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BC1CDB0E-B0C6-CD2F-09BD-35935B2DA744}</ProjectGuid>
+    <ProjectGuid>{3688D593-CAC5-6FE6-775C-80F8EC4AEDFE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,8 +56,8 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/RoadConstruct.cs" />
     <Compile Include="Assets/camMove.cs" />
+    <Compile Include="Assets/RoadConstruct.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

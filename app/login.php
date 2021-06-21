@@ -4,11 +4,24 @@ require(__DIR__."/MQPublish.inc.php");
 session_start();
 ?>
 
-<form method="POST">
-<input type="text" name="username"/>
-<input type="password" name="password"/>
-<input type="submit" name="submit" value="Login"/>
-</form>
+<html>
+<head>
+	<title> Login </title> 
+
+	<style>
+	</style>
+		<body> 
+			<div class="loginbox">
+				<form method="POST">
+
+					<input type="text" name="username"/>
+					<input type="password" name="password"/>
+					<input type="submit" name="submit" value="Login"/>
+				</form>
+			</div>
+		</body>
+</head> 
+<html>
 
 <?php
 

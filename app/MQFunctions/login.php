@@ -1,6 +1,10 @@
+
 <?php
 function login($username, $password){
+	echo $username; 
+	echo $password;
 	try{
+
 		require_once(__DIR__.'/../../lib/path.inc');
 		require_once(__DIR__.'/../../lib/get_host_info.inc');
 		require_once(__DIR__.'/../../lib/rabbitMQLib.inc');

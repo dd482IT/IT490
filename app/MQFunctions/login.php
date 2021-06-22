@@ -12,6 +12,7 @@ function login($username, $password){
 		$client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
 		$msg = array("username"=>$username,"password"=>$password, "type"=>"login");
 		$response = $client->send_request($msg);
+	
 		return $response;
 	}
 	catch(Exception $e){

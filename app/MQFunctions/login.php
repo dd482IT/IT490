@@ -1,8 +1,6 @@
 
 <?php
 function login($username, $password){
-	echo $username; 
-	echo $password;
 	try{
 
 		require_once(__DIR__.'/../../lib/path.inc');
@@ -12,7 +10,6 @@ function login($username, $password){
 		$client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
 		$msg = array("username"=>$username,"password"=>$password, "type"=>"login");
 		$response = $client->send_request($msg);
-	
 		return $response;
 	}
 	catch(Exception $e){

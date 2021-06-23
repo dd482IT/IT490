@@ -2,7 +2,6 @@
 require_once(__DIR__ . "/nav.php");
 require(__DIR__."/MQPublish.inc.php");
 require_once(__DIR__ . "/Functions/flash.php");
-session_start();
 ?>
 
 <html>
@@ -14,9 +13,9 @@ session_start();
 		<body> 
 			<div class="loginbox">
 				<form method="POST">
-					<input type="text" name="username"/>
-					<input type="password" name="password"/>
-					<input type="submit" name="submit" value="Login"/>
+					<input type="text" name="username" required/>
+					<input type="password" name="password" required/>
+					<input type="submit" name="submit" value="Login" id=".flash-message"/>
 				</form>
 			</div>
 		</body>
@@ -54,30 +53,32 @@ if(isset($_POST["submit"])){
 	//calls function from MQPublish.inc.php to communicate with MQ
 	if($isValid){
 		$response = login($username, $password);
+		echo "hi, line 56"; 
 	}
 	else{
-		echo "Missing credentials";
+		echo "There was an error";
 	}
 	
-	
-	if($response["status"] == 200){
-		if($isset($response)){
-			$password_hash_from_db = $response["password_hash"];
-			if(password_verify($password, $password_hash_from_db))
-			{
-				unset($response["password"]);
-				$_SESSION["user"] = $response["data"];
-				die(header("Location: home.php"));
-
-			}else{
-				echo "Wrong Credentials";
-			}
+	if(isset($response)){
+		echo "hi, line 63"; 
+		echo $response;
+		if($response["status"] == 200){	
+			echo "hi, line 65"; 
+			unset($response["password"]);
+			//$_SESSION["user"] = $response['data'];
+			header("Location: home.php");
+			$username = null;
+			$email = null;
+			$password = null;
+			$isValid = true; 
 		}
-		
-		
+		else{
+			//var_export($response);
+			echo "There was an error retrieving data";
+		}
 	}
 	else{
-		var_export($response);
+		echo "There was an error retrieving data";
 	}
 
 }

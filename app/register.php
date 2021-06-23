@@ -5,8 +5,10 @@ session_start();
 ?>
 
 <form method="POST">
-<input type="text" name="username"/>
-<input type="password" name="password"/>
+<input type="text" name="username" require/>
+<input type="password" name="password" require/>
+<input type="confirmpassword" name= "confirmpassword" require/>
+<input type="email" name="email" require/>
 <input type="submit" name="submit" value="Login"/>
 </form>
 
@@ -15,17 +17,43 @@ session_start();
 
 if(isset($_POST["submit"])){
 	$username = $_POST["username"];
-	$password = $_POST["password"]; 
-	//TODO validate
+	$password = $_POST["password"];
+	$email = $_POST["email"];
+	$isValid = true;
+	
+		//TODO validate
+		if (isset($_POST["email"])) {
+			$email = $_POST["email"];
+		}
+		if (isset($_POST["password"])) {
+			$password = $_POST["password"];
+		}
+		if (isset($_POST["confirm"])) {
+			$confirm = $_POST["confirm"];
+		}
+		if (isset($_POST["username"])) {
+			$username = $_POST["username"];
+		}
+        // Prepare a select statementSS
+		if (!isset($email) || !isset($password) || !isset($confirm)) {
+			$isValid = false;
+		}
+        
+		if ($isValid) {
+			$response = register($username, $password);
+		}
+		else{
+			echo "Invalid credentials";
+		}
 
-	//calls function from MQPublish.inc.php to communicate with MQ
-	$response = register($username, $password);
+	
 	if($response["status"] == 200){
 		$_SESSION["user"] = $response["data"];
 	}
 	else{
 		var_export($response);
 	}
+	
 
 }
 ?>

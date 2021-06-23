@@ -5,10 +5,10 @@ session_start();
 ?>
 
 <form method="POST">
-<input type="text" name="username" require/>
-<input type="password" name="password" require/>
-<input type="confirmpassword" name= "confirmpassword" require/>
-<input type="email" name="email" require/>
+<input type="text" name="username" require> Username </input>
+<input type="password" name="password" require/>  Password </input>
+<input type="password" name="confirm_password" require/>  Confirm Password </input>
+<input type="email" name="email" require/>  Email </input>
 <input type="submit" name="submit" value="Login"/>
 </form>
 
@@ -16,31 +16,41 @@ session_start();
 
 
 if(isset($_POST["submit"])){
-	$username = $_POST["username"];
-	$password = $_POST["password"];
-	$email = $_POST["email"];
+	$username = null;
+	$password = null;
+	$email = null;
+	$confirm_password = null; 
 	$isValid = true;
 	
-		//TODO validate
+		//TODO validate	
 		if (isset($_POST["email"])) {
 			$email = $_POST["email"];
 		}
 		if (isset($_POST["password"])) {
 			$password = $_POST["password"];
 		}
-		if (isset($_POST["confirm"])) {
-			$confirm = $_POST["confirm"];
+		if (isset($_POST["confirm_password"])) {
+			$confirm_password = $_POST["confirm_password"];
 		}
 		if (isset($_POST["username"])) {
 			$username = $_POST["username"];
 		}
         // Prepare a select statementSS
-		if (!isset($email) || !isset($password) || !isset($confirm)) {
+		if (!isset($email) || !isset($password) || !isset($username) || !isset($confirm_password)) {
+			$isValid = false;
+			
+		}
+		
+		if ($password == $confirm_password) {
+			echo "True";
+		}
+		else {	
 			$isValid = false;
 		}
         
 		if ($isValid) {
-			$response = register($username, $password);
+			$response = register($username, $email, $password);
+			echo "Hi line 51";
 		}
 		else{
 			echo "Invalid credentials";

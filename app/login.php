@@ -2,6 +2,7 @@
 require_once(__DIR__ . "/nav.php");
 require(__DIR__."/MQPublish.inc.php");
 require_once(__DIR__ . "/Functions/flash.php");
+session_start();
 ?>
 
 <html>
@@ -53,27 +54,20 @@ if(isset($_POST["submit"])){
 	//calls function from MQPublish.inc.php to communicate with MQ
 	if($isValid){
 		$response = login($username, $password);
-		echo "hi, line 56"; 
 	}
 	else{
 		echo "There was an error";
 	}
 	
 	if(isset($response)){
-		echo "hi, line 63"; 
-		echo $response;
-		if($response["status"] == 200){	
-			echo "hi, line 65"; 
-			unset($response["password"]);
-			//$_SESSION["user"] = $response['data'];
-			header("Location: home.php");
-			$username = null;
-			$email = null;
-			$password = null;
-			$isValid = true; 
+		if($response->status == 200){	
+			unset($response->password);
+			$_SESSION["id"] = $response->id;
+			$_SESSION["email"] = $respone->email;
+			die(header("Location: home.php"));
 		}
 		else{
-			//var_export($response);
+			var_export($response);
 			echo "There was an error retrieving data";
 		}
 	}

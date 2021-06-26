@@ -1,8 +1,8 @@
 <?php require_once(__DIR__ . "/nav.php"); ?>
 <?php
 $email = "";
-if (isset($_SESSION["user"]) && isset($_SESSION["user"]["email"])) {
-    $email = $_SESSION["user"]["email"];
+if (isset($_SESSION["email"])) {
+    $email = $_SESSION["email"];
 }
 ?>
 <div class="home">    <p>Welcome, <?php echo $email; ?></p> </div>

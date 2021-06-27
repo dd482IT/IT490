@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once(__DIR__ . "/Functions/isLoggedIn.php");?>
 <link rel="stylesheet" href="/styles/nav.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -12,10 +13,7 @@ require_once(__DIR__ . "/Functions/isLoggedIn.php");?>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/app/home.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <?php if (!is_logged_in()): ?>
+      <?php if(!is_logged_in()): ?>
       <li class="nav-item">
         <a class="nav-link" href="/app/login.php">Login</a>
       </li>
@@ -23,10 +21,14 @@ require_once(__DIR__ . "/Functions/isLoggedIn.php");?>
         <a class="nav-link" href="/app/register.php">Register</a>
       </li>
       <?php endif; ?>
-      <?php if (is_logged_in()): ?>
+      <?php if(is_logged_in()): ?>
       <li class="nav-item">
-        <a class="nav-link disabled" href="Profile">Profile</a>
+        <a class="nav-link" href="Profile">Profile</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="logout.php">Logout</a>
+      </li>
+
       <?php endif; ?>
     </ul>
   </div>

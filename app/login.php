@@ -54,6 +54,7 @@ if(isset($_POST["submit"])){
 	//calls function from MQPublish.inc.php to communicate with MQ
 	if($isValid){
 		$response = login($username, $password);
+		print_r($respone);
 	}
 	else{
 		echo "There was an error";
@@ -62,13 +63,12 @@ if(isset($_POST["submit"])){
 	if(isset($response)){
 		if($response->status == 200){	
 			unset($response->password);
-			$_SESSION["id"] = $response->id;
-			$_SESSION["email"] = $respone->email;
+			$_SESSION["user"] = $response->id;
+			$_SESSION["email"] = $response->email;
 			die(header("Location: home.php"));
 		}
 		else{
-			var_export($response);
-			echo "There was an error retrieving data";
+			//;
 		}
 	}
 	else{

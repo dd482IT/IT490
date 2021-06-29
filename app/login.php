@@ -2,6 +2,7 @@
 require_once(__DIR__ . "/nav.php");
 require(__DIR__."/MQPublish.inc.php");
 require_once(__DIR__ . "/Functions/flash.php");
+require_once(__DIR__ . "/Functions/safe_echo.php");
 session_start();
 ?>
 
@@ -54,25 +55,25 @@ if(isset($_POST["submit"])){
 	//calls function from MQPublish.inc.php to communicate with MQ
 	if($isValid){
 		$response = login($username, $password);
-		print_r($respone);
+		//print_r($respone);
 	}
 	else{
-		echo "There was an error";
+		safer_echo("There was an error retrieving data");
 	}
 	
 	if(isset($response)){
 		if($response->status == 200){	
 			unset($response->password);
-			$_SESSION["user"] = $response->id;
+			$_SESSION["user"] = $response->username;
 			$_SESSION["email"] = $response->email;
 			die(header("Location: home.php"));
 		}
 		else{
-			//;
+			safer_echo("Incorrect Credentials");
 		}
 	}
 	else{
-		echo "There was an error retrieving data";
+		safer_echo("There was an error retrieving data");
 	}
 
 }

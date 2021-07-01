@@ -1,14 +1,14 @@
 [Unit]
-Description=Sample nonsense 
+Description=Running Consumer.php 
 After=network-online.target
 Requires=network-online.target
-Restart=on-failure 
-RestartSec=10s
 
 [Service]
 Type=simple 
-WorkingDirectory=/home/ubuntu/IT490
-ExecStart=php runner.php
+WorkingDirectory=/home/ubuntu
+Restart=on-failure
+RestartSec=10
+ExecStart=php consumer.php
 User=ubuntu
 
 [Install]

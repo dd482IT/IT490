@@ -1,8 +1,6 @@
 
 <?php
 function login($username, $password){
-	echo $username; 
-	echo $password;
 	try{
 
 		require_once(__DIR__.'/../../lib/path.inc');

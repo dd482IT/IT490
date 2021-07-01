@@ -1,0 +1,15 @@
+[Unit]
+Description=Running Consumer.php 
+After=network-online.target
+Requires=network-online.target
+
+[Service]
+Type=simple 
+WorkingDirectory=/home/ubuntu
+Restart=on-failure
+RestartSec=10
+ExecStart=php consumer.php
+User=ubuntu
+
+[Install]
+WantedBy=default.target

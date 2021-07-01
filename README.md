@@ -1,5 +1,5 @@
-###Registration
-        - [ ]A form must ask a user for registration details
+### Registration
+        - [ ] A form must ask a user for registration details
             email (must be valid)
             username (required, add any other validation)
             password (required, add any other validation like min length, characters, etc)

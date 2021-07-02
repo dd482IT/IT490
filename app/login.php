@@ -60,10 +60,11 @@ if(isset($_POST["submit"])){
 		if($response->status == 200){	
 			unset($response->password);
 			$_SESSION["user"] = $response->user_id;
-			$_SESSION["email"] = $response->email;
+			$_SESSION["email"] = $response->email;s
 			$login = null;
 			$email = null;
 			$password = null; 
+			flash("Sucessessfull Login");
 			die(header("Location: home.php"));
 
 			

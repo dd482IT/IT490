@@ -14,7 +14,7 @@ session_start();
 		<body> 
 			<div class="loginbox">
 				<form method="POST">
-					<input type="text" name="username" required/>
+					<input type="text" name="login" required/>
 					<input type="password" name="password" required/>
 					<input type="submit" name="submit" value="Login" id=".flash-message"/>
 				</form>
@@ -27,18 +27,14 @@ session_start();
 
 
 if(isset($_POST["submit"])){
-	$username = null;
+	$login = null;
 	$email = null;
 	$password = null;
 	$isValid = true; 
 
 	//TODO validate
-	if (isset($_POST["username"])) {
-		if(filter_var($username, FILTER_VALIDATE_EMAIL)){
-			$email = $_POST["username"];
-		}else{
-			$username = $_POST["username"];
-		}
+	if (isset($_POST["login"])) {
+		$login = $_POST["login"];
     }else{
 		$isValid = false;
 	}
@@ -53,8 +49,8 @@ if(isset($_POST["submit"])){
 	
 	//calls function from MQPublish.inc.php to communicate with MQ
 	if($isValid){
-		$response = login($username, $password);
-		//print_r($respone);
+		$response = login($login, $password);
+		//var_export($response, true);
 	}
 	else{
 		flash("There was an error retrieving data");
@@ -63,9 +59,14 @@ if(isset($_POST["submit"])){
 	if(isset($response)){
 		if($response->status == 200){	
 			unset($response->password);
-			$_SESSION["user"] = $response->username;
+			$_SESSION["user"] = $response->user_id;
 			$_SESSION["email"] = $response->email;
+			$login = null;
+			$email = null;
+			$password = null; 
 			die(header("Location: home.php"));
+
+			
 		}
 		else{
 			flash("Incorrect Credentials");

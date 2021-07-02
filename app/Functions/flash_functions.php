@@ -19,4 +19,5 @@ function getMessages() {
     }
     return array();
 }
+
 ?>

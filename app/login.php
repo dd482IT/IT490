@@ -53,7 +53,7 @@ if(isset($_POST["submit"])){
 		//var_export($response, true);
 	}
 	else{
-		safer_echo("There was an error retrieving data");
+		flash("There was an error retrieving data");
 	}
 	
 	if(isset($response)){
@@ -69,16 +69,16 @@ if(isset($_POST["submit"])){
 			
 		}
 		else{
-			safer_echo("Incorrect Credentials");
+			flash("Incorrect Credentials");
 		}
 	}
 	else{
-		safer_echo("There was an error retrieving data");
+		flash("There was an error retrieving data");
 	}
 
 }
 ?>
-
+<?php require(DIR . "/Functions/flash.php");
 <!-- 
 Login
 

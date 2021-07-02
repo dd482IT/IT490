@@ -38,3 +38,9 @@
 ### Logout
         -[X] Should destroy the session
         -[X] Redirect to login
+        
+     
+     
+### Comments 
+
+Daniel D: I worked a bit on everything, login, register and flash messaging. Mainly helped keep the group in order and assigned work as needed. 

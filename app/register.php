@@ -41,19 +41,16 @@ if(isset($_POST["submit"])){
 			
 		}
 		
-		if ($password == $confirm_password) {
-			echo "True";
-		}
-		else {	
+		if ($password != $confirm_password) {
 			$isValid = false;
+			//flash("Passwords do not match");
 		}
         
 		if ($isValid) {
 			$response = register($username, $email, $password);
-			echo "Hi line 51";
 		}
 		else{
-			echo "Invalid credentials";
+			//flash("Invalid Input, please try again");
 		}
 
 	
@@ -61,11 +58,11 @@ if(isset($_POST["submit"])){
 		$_SESSION["user"] = $response["data"];
 	}
 	else{
-		var_export($response);
+		//flash("There was an error")
 	}
 	
 
 }
 ?>
-
+<?php require(__DIR__ . "/Functions/flash.php");
 

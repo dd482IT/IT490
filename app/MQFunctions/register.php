@@ -1,12 +1,12 @@
 <?php
-function register($username, $password){
+function register($username, $email, $password){
 	try{
 		require_once(__DIR__.'/../../lib/path.inc');
 		require_once(__DIR__.'/../../lib/get_host_info.inc');
 		require_once(__DIR__.'/../../lib/rabbitMQLib.inc');
 
 		$client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
-		$msg = array("username"=>$username,"password"=>$password, "type"=>"register");
+		$msg = array("username"=>$username,"email"=>$email, "password"=>$password,"type"=>"register");
 		$response = $client->send_request($msg);
 		return $response;
 	}

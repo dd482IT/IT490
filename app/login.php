@@ -60,7 +60,7 @@ if(isset($_POST["submit"])){
 		if($response->status == 200){	
 			unset($response->password);
 			$_SESSION["user"] = $response->user_id;
-			$_SESSION["email"] = $response->email;s
+			$_SESSION["email"] = $response->email;
 			$login = null;
 			$email = null;
 			$password = null; 

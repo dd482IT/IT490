@@ -43,22 +43,29 @@ if(isset($_POST["submit"])){
 		
 		if ($password != $confirm_password) {
 			$isValid = false;
-			//flash("Passwords do not match");
+			flash("Passwords do not match");
+			//die();
 		}
         
 		if ($isValid) {
 			$response = register($username, $email, $password);
 		}
 		else{
-			//flash("Invalid Input, please try again");
+			flash("Invalid Input, please try again");
+			//die();
 		}
 
 	
-	if($response["status"] == 200){
-		$_SESSION["user"] = $response["data"];
+	if($response->status == 200){
+		flash("Sucessful account creation!");
+		die(header("Location: /app/login.php"));
 	}
-	else{
-		//flash("There was an error")
+	elseif($response->status == 200){
+		flash("Account already exists!");
+		//die();
+	}else{
+		flash("There was an error");
+		//die();
 	}
 	
 

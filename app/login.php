@@ -57,7 +57,7 @@ if(isset($_POST["submit"])){
 		//print_r($respone);
 	}
 	else{
-		safer_echo("There was an error retrieving data");
+		flash("There was an error retrieving data");
 	}
 	
 	if(isset($response)){
@@ -68,16 +68,16 @@ if(isset($_POST["submit"])){
 			die(header("Location: home.php"));
 		}
 		else{
-			safer_echo("Incorrect Credentials");
+			flash("Incorrect Credentials");
 		}
 	}
 	else{
-		safer_echo("There was an error retrieving data");
+		flash("There was an error retrieving data");
 	}
 
 }
 ?>
-
+<?php require(DIR . "/Functions/flash.php");
 <!-- 
 Login
 

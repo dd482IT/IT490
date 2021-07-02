@@ -78,7 +78,7 @@ if(isset($_POST["submit"])){
 
 }
 ?>
-<?php require(DIR . "/Functions/flash.php");
+<?php require(__DIR__ . "/Functions/flash.php");
 <!-- 
 Login
 

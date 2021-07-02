@@ -1,14 +1,13 @@
 ### Registration
-        - [ ] A form must ask a user for registration details
+        - [X] A form must ask a user for registration details
             email (must be valid)
             username (required, add any other validation)
             password (required, add any other validation like min length, characters, etc)
             confirm password (required, must match password)
-        - [ ]Password and confirm password must match before anything happens
-        - [ ]Ensure email and username are unique
-        - [ ]Before insertion to the Users table password must be hashed via password_hash($password, PASSWORD_BCRYPT)
-        - [ ]Process should return a success message or a relevant error message
-        - [ ]On successful registration redirect the user to the login page
+        - [X]Password and confirm password must match before anything happens
+        - [X]Ensure email and username are unique
+        - [X]Before insertion to the Users table password must be hashed via password_hash($password, PASSWORD_BCRYPT)
+        - [X]On successful registration redirect the user to the login page
 ### Login
         - [X] A form must ask for login details
             either username or email (one input field should allow either)

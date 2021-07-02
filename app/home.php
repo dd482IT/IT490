@@ -26,4 +26,5 @@ body {
 <p>A website created by me.</p>
 
 </body>
-</html> 
+</html>
+<?php require(__DIR__ . "/Functions/flash.php");

@@ -1,18 +1,21 @@
-<?php 
-
-    function flash($msg){
-
-            ?>  
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong> <?php echo $msg?></strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+<div class="container" id="flash">
+    <?php $messages = getMessages(); ?>
+    <?php if ($messages): ?>
+        <?php foreach ($messages as $msg): ?>
+            <div class="row bg-secondary justify-content-center">
+                <p><?php echo $msg; ?></p>
             </div>
-            <?php
-
+        <?php endforeach; ?>
+    <?php endif; ?>
+</div>
+<script>
+    //used to pretend the flash messages are below the first nav element
+    function moveMeUp(ele) {
+        let target = document.getElementsByTagName("nav")[0];
+        if (target) {
+            target.after(ele);
+        }
     }
 
-
-
-?>
+    moveMeUp(document.getElementById("flash"));
+</script>

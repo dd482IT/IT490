@@ -1,5 +1,0 @@
-/vendor/
-config.*
-*.log
-.DS_Store
-dbconnection.php

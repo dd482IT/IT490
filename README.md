@@ -44,3 +44,4 @@
 ### Comments 
 
 Daniel D: I worked a bit on everything, login, register and flash messaging. Mainly helped keep the group in order and assigned work as needed. 
+Patryk Z: Developing the Game and helping here and there with things that had higher priority.   

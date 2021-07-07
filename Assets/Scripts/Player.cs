@@ -6,32 +6,34 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public int health = 3;
-    
-    
-    
-  
-    private Vector2 targetPos;
-    private float Yincrement =3f;
+    public int coinsCount;
 
-    private float speed = 50f; 
+    private Vector3 mousePosition;
+    public float moveSpeed = 1000f;
+
 
     private void Update()
     {
+
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Vector2 targetPos = new Vector2(-15, -15);
+            transform.position = Vector2.MoveTowards(transform.position, targetPos, 50 * Time.deltaTime);
+            Invoke("GameOver", .5f);
         }
-        
-        
-        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+        else
+        {
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < 1)
-        {
-            targetPos = new Vector2(transform.position.x, transform.position.y + Yincrement);
+            mousePosition = Input.mousePosition;
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            if (mousePosition.x > -9.2 && mousePosition.x < 9.2 && mousePosition.y > -5.2 && mousePosition.y < 5.2)
+            {
+                transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > -1)
-        {
-            targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement);
-        }
+    }
+    void GameOver()
+    {
+        SceneManager.LoadScene("StartMenu");
     }
 }

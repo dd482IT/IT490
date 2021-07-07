@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/StartMenu.unity
+    guid: 723a4901efaaaf64f9a1ea1b284ee27c
+  - enabled: 1
+    path: Assets/EndlessCrypto.unity
+    guid: 75a7ee2e8193ee9409094ed2615e6fdc
   m_configObjects: {}

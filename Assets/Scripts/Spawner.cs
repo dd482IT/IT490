@@ -5,15 +5,20 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject[] rockPatterns;
+    public GameObject[] coins;
 
     private float timeBetweenSpawn;
-    public float startTimeBetweenSpawn;
+    public float startTimeBetweenSpawn = 1.75f;
 
     public float decreaseTime;
-    public float minTime = 0.65f;
+    public float minTime = 1f;
+
+    public int coinChance = 3;
 
     private void Update()
     {
+       
+
         if (timeBetweenSpawn <= 0)
         {
             int rand = Random.Range(0, rockPatterns.Length);
@@ -22,6 +27,12 @@ public class Spawner : MonoBehaviour
             if (startTimeBetweenSpawn > minTime)
             {
                 startTimeBetweenSpawn -= decreaseTime;
+            }
+
+            if (Random.Range(0, coinChance) == 1)
+            {
+                int rand2 = Random.Range(0, coins.Length);
+                Instantiate(coins[rand2], transform.position, Quaternion.identity);
             }
         }
         else

@@ -24,7 +24,7 @@ require_once(__DIR__ . "/Functions/flash_functions.php");?>
       <?php endif; ?>
       <?php if(is_logged_in()): ?>
       <li class="nav-item">
-        <a class="nav-link" href="Profile">Profile</a>
+        <a class="nav-link" href="profile.php">Profile</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="logout.php">Logout</a>

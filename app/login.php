@@ -7,6 +7,8 @@ session_start();
 
 <html>
 <head>
+
+	<link rel="stylesheet" href="/styles/nav.css">
 	<title> Login </title> 
 
 	<style>

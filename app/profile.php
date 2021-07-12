@@ -14,9 +14,17 @@ session_start();
 # https://freefrontend.com/bootstrap-profiles/
 ?>
 
-
-
-<div class="container">
+<!DOCTYPE html>
+<head>
+  <html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 20px; margin: 0 auto;}
+  </style>
+</head>
+<body>
+  <div class="container">
     <div class="main-body">
             <div class="col-md-8">
               <div class="card mb-3">
@@ -64,3 +72,4 @@ session_start();
           </div>
         </div>
     </div>
+</body>

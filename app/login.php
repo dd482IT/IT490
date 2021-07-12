@@ -21,19 +21,19 @@ session_start();
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
-        <form method="post">
+        <form method="POST">
             <div class="form-group">
                 <label>Username</label>
-                <input type="text" name="login" class="form-control">
+                <input type="text" name="login" class="form-control" required>
                 
             </div>    
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control">
+                <input type="password" name="password" class="form-control" required>
             
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+                <input type="submit" name="submit" class="btn btn-primary" value="Login" required>
             </div>
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
@@ -44,8 +44,6 @@ session_start();
 <!--
 <html>
 <head>
-
-	<link rel="stylesheet" href="/styles/nav.css">
 	<title> Login </title> 
 
 	<style>

@@ -4,6 +4,7 @@ require(__DIR__."/MQPublish.inc.php");
 session_start();
 ?>
 
+<!--
 <form method="POST">
 <input type="text" name="username" require> Username </input>
 <input type="password" name="password" require/>  Password </input>
@@ -11,6 +12,53 @@ session_start();
 <input type="email" name="email" require/>  Email </input>
 <input type="submit" name="submit" value="Login"/>
 </form>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 360px; padding: 20px;  margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Sign Up</h2>
+        <p>Please fill this form to create an account.</p>
+        <form method="POST">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" required> 
+                <span class="invalid-feedback"></span>
+            </div>
+			<div class="form-group">
+                <label>Email</label>
+                <input type="text" name="email" class="form-control" required>
+                <span class="invalid-feedback"></span>
+            </div>    
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" required>
+                <span class="invalid-feedback"></span>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" name="confirm_password" class="form-control" required>
+                <span class="invalid-feedback"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+            </div>
+            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+        </form>
+    </div>    
+</body>
+</html>
+
 
 <?php
 

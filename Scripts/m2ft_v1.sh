@@ -29,7 +29,7 @@ backup(){
 	read input 
 	
 	if [ "$input" != "" ]; then
-		dirname=$input
+		dirname="$input.$TIMESTAMP"
 	fi
 
 	mkdir /home/daniel/Desktop/backup/$dirname/

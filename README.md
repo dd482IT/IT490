@@ -12,7 +12,8 @@ LIVE=""
 #USE FOR APPENDING TIMESTAMP TO FILES
 TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 ```
-> Words
+> IP_A is to declare the IP of the VM that we are connecting to.  
+> Backup, Origin, Landing and Live are to declare directories.
 
 
 ### Backup Function
@@ -31,7 +32,12 @@ backup(){
 	scp -r "${IP_A}":"${LIVE}"* "${BACKUP}"/$dirname/
 }
 ```
-> Words
+> For the Backup function we ask the user if they would like to name the backup.  
+>> If they chose to name it, a timestamp will be added to the name.  
+>> If they refuse, only a timestamp is used as the name  
+
+> Using the Name of the backup a directory is created inside the backup directory.  
+> Next Using scp the files from the VM's Live folder are copied into the backup directory.
 
 
 ### Push Function

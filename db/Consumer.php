@@ -3,7 +3,7 @@
 require_once(__DIR__ . '/lib/path.inc');
 require_once(__DIR__ . '/lib/get_host_info.inc');
 require_once(__DIR__ . '/lib/databaseLib.inc');
-
+require(__DIR__."/api_call.php");
 require(__DIR__."/dbconnection.php");
 
 //separate files for DB calls so it's easier to divide work
@@ -28,6 +28,12 @@ function request_processor($req){
 			return validate($req['session_id']);
 		case "echo":
 			return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
+		case "getAPI":
+			$request = getAPI();
+			return $request;
+		
+
+			
 	}
 	return array("return_code" => '0',
 		"message" => "Server received request and processed it");

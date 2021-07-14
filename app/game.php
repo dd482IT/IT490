@@ -13,4 +13,4 @@ session_start();
 
 </style>
 
-<iframe id="game" frameborder="0" src="https://itch.io/embed-upload/4110979?color=000000" allowfullscreen="" width="1280" height="740"><a href="https://misl3d.itch.io/endless-crypto">Play Endless Crypto on itch.io</a></iframe> 
+<iframe id="game" frameborder="0" src="https://itch.io/embed-upload/4128525?color=000000" allowfullscreen="" width="1920" height="1080"><a href="https://misl3d.itch.io/endlesscrypto-40%22%3EPlay EndlessCrypto 4.0 on itch.io</a></iframe>

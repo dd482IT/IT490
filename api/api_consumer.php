@@ -20,7 +20,7 @@ function request_processor($req){
 	//Handle message type
 	$type = $req['type'];
 	switch($type){
-		case "bitcoin":
+		case "btc":
 			return get_api("btc");
 	}
 	return array("return_code" => '0',

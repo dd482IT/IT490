@@ -1,9 +1,18 @@
-<?php require_once(__DIR__ . "/nav.php"); ?>
+<?php require_once(__DIR__ . "/nav.php"); 
+?>
 <?php
 $email = "";
 if (isset($_SESSION["email"])) {
     $email = $_SESSION["email"];
 }
+?>
+
+
+<?php
+  $request = get_btc();
+  if(isset($request)){
+    var_dump($request);
+  }
 ?>
 
 

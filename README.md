@@ -1,6 +1,6 @@
 ## Branch for Milestone 2
 
-##### Variables Declared
+### Variables Declared
 ```bash
 #Variables Used in Script
 IP_A=""
@@ -12,8 +12,10 @@ LIVE=""
 #USE FOR APPENDING TIMESTAMP TO FILES
 TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 ```
+> Words
 
-##### Backup Function
+
+### Backup Function
 
 ```bash
 backup(){
@@ -29,8 +31,10 @@ backup(){
 	scp -r "${IP_A}":"${LIVE}"* "${BACKUP}"/$dirname/
 }
 ```
+> Words
 
-##### Push Function
+
+### Push Function
 ```bash
 push(){
 	echo "Would you like to backup? Enter yes to continue:" 
@@ -46,8 +50,10 @@ push(){
 	movetoLive
 }
 ```
+> Words
 
-##### Restore Function
+
+### Restore Function
 ```bash
 restore(){
 	echo "Please select the file from the list"
@@ -79,8 +85,10 @@ restore(){
 
 }
 ```
+> Words
 
-##### Move to Live Function
+
+### Move to Live Function
 ```bash
 movetoLive(){
 	echo "----- This is the landing directory -----"
@@ -101,8 +109,10 @@ movetoLive(){
 }
 
 ```
+> Words
 
-##### Menu Functions
+
+### Menu Functions
 ```bash
 one(){
 	push;
@@ -147,8 +157,10 @@ read_options(){
 	esac
 }
 ```
+> Words
 
-##### SSH Validation
+
+### SSH Validation
 ```bash
 check_connection(){
 	#https://stackoverflow.com/questions/1405324/how-to-create-a-bash-script-to-check-the-ssh-connection	
@@ -166,7 +178,4 @@ check_connection(){
 	fi	
 }
 ```
-
-
-
-
+> Words

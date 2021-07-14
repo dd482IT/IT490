@@ -1,4 +1,6 @@
 ## Branch for Milestone 2
+[Script](https://github.com/dd482IT/IT490/blob/MS2--Deployment/Promotion-SYS/Scripts/m2ft_v1.sh)
+
 
 ### Variables Declared
 ```bash
@@ -28,15 +30,14 @@ backup(){
 		dirname="$input.$TIMESTAMP"
 	fi
 
-	mkdir /home/daniel/Desktop/backup/$dirname/
+	mkdir "${BACKUP}"/$dirname/
 	scp -r "${IP_A}":"${LIVE}"* "${BACKUP}"/$dirname/
 }
 ```
 > For the Backup function we ask the user if they would like to name the backup.  
 >> If they chose to name it, a timestamp will be added to the name.  
 >> If they refuse, only a timestamp is used as the name  
-
-> Using the Name of the backup a directory is created inside the backup directory.  
+>> Using the Name of the backup a directory is created inside the backup directory.  
 > Next Using scp the files from the VM's Live folder are copied into the backup directory.
 
 
@@ -56,7 +57,11 @@ push(){
 	movetoLive
 }
 ```
-> Words
+> For the Push function we verify with the user if they would like to Backup before proceeding  
+>> If they choose yes, the Backup Function is ran and the function will continue
+>> If No, the function will continue
+>> Using scp the files are move from origin and pushed to the landing point on the VM
+>> These Files are not yet live but are done so when the moveToLive Function is completed 
 
 
 ### Restore Function
@@ -91,7 +96,10 @@ restore(){
 
 }
 ```
-> Words
+> The Restore Function allows the user to choose from a list of backups and push them to Live
+>> We create an array of the Backup directory where each is given a number.  
+>> The user is asked to choose a number, and informed that the working directory will be replaced.  
+>> Once confirmation is given the function will proceed and push the backup to live
 
 
 ### Move to Live Function
@@ -115,7 +123,10 @@ movetoLive(){
 }
 
 ```
-> Words
+> The Move Function pushes any files in the landing point to the Working Directory on the VM
+>> First we show the user what files are being pushed into the Live Directory
+>> We ask the user for confirmation if they want to push these files to live
+>> Once confirmed the Live Directory is cleared and the files from the Landing Point are pushed.
 
 
 ### Menu Functions
@@ -163,7 +174,14 @@ read_options(){
 	esac
 }
 ```
-> Words
+> Instead of Having Multiple Scripts we decided on making a menu for running the functions  
+> The Menu Lists 4 Options
+>> 1. Push To VMB
+>> 2. Backup to VMB to VMA
+>> 3. Restore to VMB
+>> 4. Exit
+>>   
+>> Pressing a Number will run the corresponding functions 
 
 
 ### SSH Validation
@@ -184,4 +202,7 @@ check_connection(){
 	fi	
 }
 ```
-> Words
+> The Script requires an active SSH connection
+> This function makes sure a connection is active 
+>> If a connection active the script will proceed to the menu
+>> If No connection is found the script will notify the user and exit

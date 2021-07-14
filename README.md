@@ -19,6 +19,7 @@ TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 ```
 > IP_A is to declare the IP of the VM that we are connecting to.  
 > Backup, Origin, Landing and Live are to declare directories.
+> Timestamp variable is used throughout the script to add timestamps to files
 
 
 ### Backup Function

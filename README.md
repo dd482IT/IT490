@@ -204,5 +204,5 @@ check_connection(){
 ```
 > The Script requires an active SSH connection
 > This function makes sure a connection is active 
->> If a connection active the script will proceed to the menu
+>> If a connection active the script will proceed to the menu  
 >> If No connection is found the script will notify the user and exit

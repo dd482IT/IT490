@@ -1,1 +1,1 @@
-Branch for Milestone 2 of IT490 Project 
+## Branch for Milestone 2

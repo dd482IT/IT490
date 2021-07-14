@@ -5,7 +5,7 @@
 > Hosted a VM and a pi as a testing grounds for the script. Mainly worked on putting code together from friends research and general cleanup of code. 
 
 #### Kevin Delgado
-> 
+> Reviewed and implemented some changes to the code with assitance from the team to get certain site functionalities working. Researching implementations for API and Load Balancing.
 
 #### Andrew Kinzler
 > 

@@ -125,7 +125,8 @@ movetoLive(){
 
 	if [ "$input" == "yes" ]; then 
 		echo "Moving files"
-		ssh "${IP_A}" "rm -r ${LIVE}*"
+		ssh "${IP_A}" "rm -r ${LIVE}"
+		ssh "${IP_A}" "mkdir ${LIVE}"
 		ssh "${IP_A}" "cp -r ${LANDING}* ${LIVE}"
 	else
 		echo " ------ Canceling ------" 

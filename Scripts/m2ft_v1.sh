@@ -32,7 +32,7 @@ backup(){
 		dirname="$input.$TIMESTAMP"
 	fi
 
-	mkdir /home/daniel/Desktop/backup/$dirname/
+	mkdir "${BACKUP}"$dirname/
 	scp -r "${IP_A}":"${LIVE}"* "${BACKUP}"/$dirname/
 }
 push(){
@@ -70,7 +70,7 @@ restore(){
 
 	if [ "$input" = "yes" ]; then 
 		echo " --------- Restoring files ---------"
-		scp -r "${path}/"* "${IP_A}":"${LANDING_DIR}"
+		scp -r "${path}/"* "${IP_A}":"${LANDING}"
 	else 
 		echo " --------- Canceling! ---------"
 	fi
@@ -88,7 +88,8 @@ movetoLive(){
 
 	if [ "$input" == "yes" ]; then 
 		echo "Moving files"
-		ssh "${IP_A}" "rm -r ${LIVE}*"
+		ssh "${IP_A}" "rm -r ${LIVE}"
+		ssh "${IP_A}" "mkdir ${LIVE}"
 		ssh "${IP_A}" "cp -r ${LANDING}* ${LIVE}"
 	else
 		echo " ------ Canceling ------" 

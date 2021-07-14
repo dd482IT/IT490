@@ -4,7 +4,7 @@
 #meaning, VMA->VMB->VMC, VMA does not need access to VMC 
 
 
-
+#Variables Used in Script
 IP_A=""
 BACKUP=""
 ORIGIN=""
@@ -13,10 +13,6 @@ LIVE=""
 
 #USE FOR APPENDING TIMESTAMP TO FILES
 TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
-
-#USE FOR FINDING LATEST DIRECTORY 
-LAST='ls -1drt * | tail -1'
-
 
 ## ----------Functions----------
 

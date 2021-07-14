@@ -1,5 +1,5 @@
-# Branch for Milestone 2
-## [Script](https://github.com/dd482IT/IT490/blob/MS2--Deployment/Promotion-SYS/Scripts/m2ft_v1.sh)
+## Branch for Milestone 2
+### [**_Script_**](https://github.com/dd482IT/IT490/blob/MS2--Deployment/Promotion-SYS/Scripts/m2ft_v1.sh)
 
 
 ### Variables Declared

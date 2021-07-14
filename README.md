@@ -30,7 +30,7 @@ backup(){
 		dirname="$input.$TIMESTAMP"
 	fi
 
-	mkdir "${BACKUP}"/$dirname/
+	mkdir "${BACKUP}"$dirname/
 	scp -r "${IP_A}":"${LIVE}"* "${BACKUP}"/$dirname/
 }
 ```

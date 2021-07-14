@@ -18,10 +18,6 @@ session_start();
 <head>
   <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; margin: 0 auto;}
-  </style>
 </head>
 <body>
   <div class="container">

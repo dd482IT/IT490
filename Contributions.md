@@ -2,7 +2,7 @@
 > 
 
 #### Daniel Daszkiewicz
-> 
+> Hosted a VM and a pi as a testing grounds for the script. Mainly worked on putting code together from friends research and general cleanup of code. 
 
 #### Kevin Delgado
 > 

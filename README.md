@@ -38,7 +38,7 @@ backup(){
 >> If they chose to name it, a timestamp will be added to the name.  
 >> If they refuse, only a timestamp is used as the name  
 >> Using the Name of the backup a directory is created inside the backup directory.  
-> Next Using scp the files from the VM's Live folder are copied into the backup directory.
+>> Next Using scp the files from the VM's Live folder are copied into the backup directory.
 
 
 ### Push Function

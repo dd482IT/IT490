@@ -30,10 +30,7 @@ function request_processor($req){
 			return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
 		case "getAPI":
 			$request = getAPI();
-			return $request;
-		
-
-			
+			return $request;	
 	}
 	return array("return_code" => '0',
 		"message" => "Server received request and processed it");

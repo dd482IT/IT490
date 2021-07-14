@@ -1,4 +1,4 @@
-## Branch for Milestone 2
+## Branch for Milestone 2 - Deployment & Promotion System
 ### [**_Script File_**](https://github.com/dd482IT/IT490/blob/MS2--Deployment/Promotion-SYS/Scripts/m2ft_v1.sh)
 
 

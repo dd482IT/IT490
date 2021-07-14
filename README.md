@@ -43,6 +43,10 @@ backup(){
 >> Using the Name of the backup a directory is created inside the backup directory.  
 >> Next Using scp the files from the VM's Live folder are copied into the backup directory.
 
+![backing up](https://user-images.githubusercontent.com/70596795/125690587-1c516912-b269-4b2a-8809-36d67b5b6f90.png)
+
+![proof_of_backup](https://user-images.githubusercontent.com/70596795/125690595-f8ee85d8-68df-4323-b6f6-58b76d24bc07.png)
+
 
 ### Push Function
 ```bash
@@ -65,6 +69,8 @@ push(){
 >> If No, the function will continue
 >> Using scp the files are move from origin and pushed to the landing point on the VM
 >> These Files are not yet live but are done so when the moveToLive Function is completed 
+
+![push](https://user-images.githubusercontent.com/70596795/125690625-ae3ba1e3-f50b-440e-bf96-6b9dda0f41ce.png)
 
 
 ### Restore Function
@@ -99,6 +105,8 @@ restore(){
 
 }
 ```
+![restoring](https://user-images.githubusercontent.com/70596795/125690654-77c996b4-1c50-4f18-9dcb-0f8c8750dd1b.png)
+
 > The Restore Function allows the user to choose from a list of backups and push them to Live
 >> We create an array of the Backup directory where each is given a number.  
 >> The user is asked to choose a number, and informed that the working directory will be replaced.  

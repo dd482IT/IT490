@@ -14,7 +14,6 @@ LIVE=""
 #USE FOR APPENDING TIMESTAMP TO FILES
 TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 
-
 ## ----------Functions----------
 
 pause(){

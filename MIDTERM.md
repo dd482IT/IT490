@@ -22,6 +22,12 @@ Project Board: Click here [Project Board](https://github.com/dd482IT/IT490/proje
 
 ### Daniel Daszkiewicz 
 
+So far, I worked on overall project preperation and finlization. I work a bit on everything for the project besides the game, working on database functionality and connecting it with my team mates as they needed help.
+
+So far the only issues I encountered was queue locking and silly mistakes in my code. One issue that is still on-going is, the first login results in "incorrect credntials" but then the second time, login is succcesful (this may due to queue locking). 
+
+So far, I learned much more about the overall work flow that needs to be maintained with a team. Development wise, learning about centralized logging was new to me and required that I did my own research. I have also been learning a bit more about php, html, css and proper project file strucuture. 
+
 ### Kevin Delgado 
 
 ### Patryk Ziemba 

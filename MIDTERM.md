@@ -22,7 +22,7 @@ Project Board: Click here [Project Board](https://github.com/dd482IT/IT490/proje
 
 ### Daniel Daszkiewicz 
 
-So far, I worked on overall project preperation and finlization. I work a bit on everything for the project besides the game, working on database functionality and connecting it with my team mates as they needed help.
+So far, I worked on overall project preperation and finlization. I work a bit on everything for the project besides the game, working on database/webpage functionality and connecting it with my work completed by my team.
 
 1. [Baseline and Navbar](https://github.com/dd482IT/IT490/pull/5) COMPLETED
 2. [Registration](https://github.com/dd482IT/IT490/pull/30/commits/d5698e642c0b67e2733c937866b22a7358148bf2) COMPLETED 

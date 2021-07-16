@@ -35,7 +35,11 @@ So far, I learned much more about the overall work flow that needs to be maintai
 
 
 ### Kevin Delgado 
+So far i've been helping where I can running certain services and connecting to the main VM to ensure connectivity from other instances. Helped out with changing some code to implement the flash messages that appear on the registration and login page after entries are made. 
 
+Currently researching an implementation of load balancing which will more than likely utilize AWS Elastic Load Balancing in order to route traffic successfully from one VM to another when the existing VM is not seen as healthy in that given instance. Tested creating a load balancer but still have to ensure functionality before attempting to have it work live with our existing system.
+
+So far i've learned mostly from walking along with the code thats been implemented and further gaining an understanding for how it all connects with each other. It has fleshed out a lot of topics previously covered and demonstrated in a real project how they could be executed.
 ### Patryk Ziemba 
 
 ### Tyler Raymond 

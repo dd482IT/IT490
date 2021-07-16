@@ -1,11 +1,11 @@
 # Propsal for Crypto Web Game 
 #### Covineers Members: 
 * Adem Coklar 
-* Daniel Daszkiewicz  
-* Kevin Delgado  
-* Andrew Kinzler    
-* Tyler Raymond    
-* Patryk Ziemba  
+* [Daniel Daszkiewicz](https://github.com/dd482IT) 
+* [Kevin Delgado](https://github.com/kad45)  
+* [Andrew Kinzler](https://github.com/ak2425-njit)    
+* [Tyler Raymond](https://github.com/traymond22)    
+* [Patryk Ziemba](https://github.com/Misl3d)  
 
 ## Project Details
 

@@ -46,6 +46,13 @@ So far i've learned mostly from walking along with the code thats been implement
 ### Patryk Ziemba 
 
 ### Tyler Raymond 
+So far I have worked on more of the front end compared to the backend database stuff. Besides working on the appearance and usability of the website working on having the site request info from the database. 
+1. [Create Login Form] (https://github.com/dd482IT/IT490/issues/11) COMPLETE
+2. [Logout] (https://github.com/dd482IT/IT490/issues/21) COMPLETE
+
+Some issues with the website were that upon making the page formato correctly, things started appearing in the wrong places with text inside the input boxes.
+
+I learned that I do not want to be a web devoloper and that having more eyes on something can significantly increase the chances of finding bugs.
 
 ## Home 
 The home page is still in progress. We have one ready but it will be the main page for crytpo data and community interaction. The data will include...

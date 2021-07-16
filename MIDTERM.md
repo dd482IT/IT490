@@ -33,7 +33,7 @@ The login page works as expected, a user can login and continue to the home page
 
 https://user-images.githubusercontent.com/70596795/126010384-c0db47b9-19d5-4fc2-a686-b2374eeb78ea.mp4
 
-
+            
 
 ## Registration 
 

@@ -24,9 +24,15 @@ Project Board: Click here [Project Board](https://github.com/dd482IT/IT490/proje
 
 So far, I worked on overall project preperation and finlization. I work a bit on everything for the project besides the game, working on database functionality and connecting it with my team mates as they needed help.
 
+1. [Baseline and Navbar](https://github.com/dd482IT/IT490/pull/5) COMPLETED
+2. [Registration](https://github.com/dd482IT/IT490/pull/30/commits/d5698e642c0b67e2733c937866b22a7358148bf2) COMPLETED 
+3. [API Functionality] In Progress
+
 So far the only issues I encountered was queue locking and silly mistakes in my code. One issue that is still on-going is, the first login results in "incorrect credntials" but then the second time, login is succcesful (this may due to queue locking). 
 
 So far, I learned much more about the overall work flow that needs to be maintained with a team. Development wise, learning about centralized logging was new to me and required that I did my own research. I have also been learning a bit more about php, html, css and proper project file strucuture. 
+
+
 
 ### Kevin Delgado 
 
@@ -50,7 +56,7 @@ The login page works as expected, a user can login and continue to the home page
 
 https://user-images.githubusercontent.com/70596795/126010384-c0db47b9-19d5-4fc2-a686-b2374eeb78ea.mp4
 
-            
+
 
 ## Registration 
 

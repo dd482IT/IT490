@@ -1,6 +1,7 @@
 (1 pt) Add a link to the proposal.md file for ease of access
-
+Proposal: Click here [https://github.com/dd482IT/IT490/blob/main/proposal.md]
 (1 pt) Add a link to the project board for ease of access
+Project Board: Click here [https://github.com/dd482IT/IT490/projects/1]
 
 (3 pts total) Each group member should follow this format (make sure each of the 5 categories is listed/mentioned) 
   

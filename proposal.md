@@ -1,6 +1,5 @@
-## Mobile / Web Game
-### Group Name: **Covineers**
-#### Members: 
+# Propsal for Crypto Web Game 
+#### Covineers Members: 
 * Adem Coklar 
 * Daniel Daszkiewicz  
 * Kevin Delgado  
@@ -8,11 +7,14 @@
 * Tyler Raymond    
 * Patryk Ziemba  
 
-.  |  Project Details
-:---:  | :---: 
-Type | Web Game / Service 
-Targeted APIs | Coinbase Digital Currency API - Coinbase Developers    
-Summary | Allow users to collect Crypto  in an endless runner game. The API will update the value of the coin and relevant information for the player to decide whether it is worth cashing in.  
+## Project Details
+
+### Type
+* Web Game / Service 
+### Targeted APIs 
+* Coinbase Digital Currency API - Coinbase Developers    
+### Summary 
+* Allow users to collect Crypto  in an endless runner game. The API will update the value of the coin and relevant information for the player to decide whether it is worth cashing in.  
 
 
 ## Features: 

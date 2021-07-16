@@ -108,14 +108,12 @@ Summary | Allow users to collect Crypto  in an endless runner game. The API will
 
 ### Database
 * Users
-<details>
   * id
   * username 
   * email
   * created
   * modified
   * password
-</details>
 * Wallet
   * id (primary key)
   * userId (foreign key)
@@ -151,10 +149,3 @@ Summary | Allow users to collect Crypto  in an endless runner game. The API will
   * last_performance_percentage
   * created
   * modified
-
-
-
-
-
-
-

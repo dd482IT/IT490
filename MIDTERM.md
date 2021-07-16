@@ -2,9 +2,9 @@
 # Midterm MD
 
 ## Proposal
-Proposal: Click here [https://github.com/dd482IT/IT490/blob/main/proposal.md]
+Proposal: Click here [Proposal](https://github.com/dd482IT/IT490/blob/main/proposal.md)
 ## Project Board
-Project Board: Click here [https://github.com/dd482IT/IT490/projects/1]
+Project Board: Click here [Project Board] (https://github.com/dd482IT/IT490/projects/1)
 
 ## Contributions and Reflections
 

@@ -1,0 +1,24 @@
+(1 pt) Add a link to the proposal.md file for ease of access
+
+(1 pt) Add a link to the project board for ease of access
+
+(3 pts total) Each group member should follow this format (make sure each of the 5 categories is listed/mentioned) 
+  
+    Name
+    Summarize what you worked on thus far
+    List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
+    Issues personally encountered/dealt with 
+    Highlighted learnings/experiences
+
+
+Home 
+
+
+Login 
+
+
+
+Registration 
+
+Game 
+

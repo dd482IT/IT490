@@ -15,7 +15,18 @@ Project Board: Click here [https://github.com/dd482IT/IT490/projects/1]
     List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
     Issues personally encountered/dealt with 
     Highlighted learnings/experiences
+    
+### Adem Coklar 
 
+### Andrew Kinzler 
+
+### Daniel Daszkiewicz 
+
+### Kevin Delgado 
+
+### Patryk Ziemba 
+
+### Tyler Raymond 
 
 ## Home 
 The home page is still in progress. We have one ready but it will be the main page for crytpo data and community interaction. The data will include...

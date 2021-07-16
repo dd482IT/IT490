@@ -12,11 +12,10 @@
 :---:  | :---: 
 Type | Web Game / Service 
 Targeted APIs | Coinbase Digital Currency API - Coinbase Developers    
-Summary | Allow users to collect Crypto  in an endless runner game. The API will update the value of the coin and relevant information for the player to decide whether it is worth cashing in. 
+Summary | Allow users to collect Crypto  in an endless runner game. The API will update the value of the coin and relevant information for the player to decide whether it is worth cashing in.  
 
-Value of the coin is what determines the difficulty of the level 
 
-Features: 
+## Features: 
 ### Core Reqs:
   * User Role:
     * Users will be able to register
@@ -84,7 +83,7 @@ Features:
 * Purchase item directly from shop (no cart)
 * Confirm button
 * Follow the respective process depending on the “currency” of the item (credits vs crypto) 
-### Admin
+### Admin Page
 * Can add different items in the “store” like player models or skins
 * Can change the value of store items 
 * Can remove items
@@ -103,14 +102,20 @@ Features:
 * A disabled user can’t login
 * A frozen user can’t spend/acquire points
 
+### API
+* API would be called every hour to update value of crypto currencies (or based on the limit the API has) 
+* API will be used to send/receive dogecoin
+
 ### Database
 * Users
+<details>
   * id
   * username 
   * email
   * created
   * modified
   * password
+</details>
 * Wallet
   * id (primary key)
   * userId (foreign key)
@@ -147,9 +152,7 @@ Features:
   * created
   * modified
 
-### API
-* API would be called every hour to update value of crypto currencies (or based on the limit the API has) 
-* API will be used to send/receive dogecoin
+
 
 
 

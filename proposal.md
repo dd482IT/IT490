@@ -107,14 +107,14 @@ Summary | Allow users to collect Crypto  in an endless runner game. The API will
 * API will be used to send/receive dogecoin
 
 ### Database
-* Users
+* **Users**
   * id
   * username 
   * email
   * created
   * modified
   * password
-* Wallet
+* **Wallet**
   * id (primary key)
   * userId (foreign key)
   * crypto
@@ -122,7 +122,7 @@ Summary | Allow users to collect Crypto  in an endless runner game. The API will
   * items
   * created
   * modified* 
-* Items
+* **Items**
   * id
   * name
   * description
@@ -133,14 +133,14 @@ Summary | Allow users to collect Crypto  in an endless runner game. The API will
   * img_url?
   * created
   * modified
-* UserItems
+* **User Items**
   * id
   * user_id
   * item_id
   * quantity
   * created
   * modified
-* Crypto
+* **Crypto**
   * id (internal id if needed)
   * shortname
   * reference_pair? (doge/usd ex)

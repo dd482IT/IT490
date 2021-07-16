@@ -2,6 +2,7 @@
 session_start();
 require_once(__DIR__ . "/Functions/isLoggedIn.php");
 require_once(__DIR__ . "/Functions/flash_functions.php");
+require_once(__DIR__ . "/MQFunctions/get_btc.php");
 ?>
 
 <link rel="stylesheet" href="/styles/nav.css">
@@ -23,11 +24,11 @@ require_once(__DIR__ . "/Functions/flash_functions.php");
       <li class="nav-item">
         <a class="nav-link" href="/app/register.php">Register</a>
       </li>
-      <?php endif; ?>
-      <?php if(is_logged_in()): ?>
       <li class="nav-item">
           <a class="nav-link"  href="home.php"> Home </a>
       </li>
+      <?php endif; ?>
+      <?php if(is_logged_in()): ?>
       <li class="nav-item">
         <a class="nav-link" href="profile.php">Profile</a>
       </li> 

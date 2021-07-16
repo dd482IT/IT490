@@ -6,9 +6,11 @@ function get_btc(){
 		require_once(__DIR__.'/../../lib/path.inc');
 		require_once(__DIR__.'/../../lib/get_host_info.inc');
 		require_once(__DIR__.'/../../lib/rabbitMQLib.inc');
+		require_once(__DIR__ . "/../Functions/safe_echo.php");
 
 		$client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
 		$msg = array("type"=>"getAPI");
+		error_log("GOT OVER HERE");
 		$response = $client->send_request($msg);
 		return $response;
 	}

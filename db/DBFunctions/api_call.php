@@ -8,7 +8,7 @@ function getAPI($coin){
 		require_once(__DIR__.'/../../lib/rabbitMQLib.inc');
 
 		$client = new RabbitMQClient('api.ini', 'testServer');
-		$msg = array("type"=>"btc");
+		$msg = array("type"=>$coin);
 		$response = $client->send_request($msg);
 		return $response;
 	}

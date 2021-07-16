@@ -29,7 +29,7 @@ function request_processor($req){
 		case "echo":
 			return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
 		case "getAPI":
-			$request = getAPI();
+			$request = getAPI("btc");
 			return $request;	
 	}
 	return array("return_code" => '0',

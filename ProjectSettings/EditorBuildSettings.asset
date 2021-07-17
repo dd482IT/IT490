@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/EndlessCrypto.unity
     guid: 75a7ee2e8193ee9409094ed2615e6fdc
+  - enabled: 1
+    path: Assets/GameOver.unity
+    guid: 64983cd74d504de43ab7addee12edb96
   m_configObjects: {}

@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public int health = 3;
     public int coinsCount;
-
+    public static int finalCoins;
     private Vector3 mousePosition;
     public float moveSpeed = 1000f;
-
+    public Text healthDisplay;
+    public Text coinDisplay;
 
     private void Update()
     {
+        healthDisplay.text = "Health: " + health.ToString();
+        coinDisplay.text = "Coins: " + coinsCount.ToString();
+        finalCoins = coinsCount;
 
         if (health <= 0)
         {
@@ -34,6 +39,6 @@ public class Player : MonoBehaviour
     }
     void GameOver()
     {
-        SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene("GameOver");
     }
 }

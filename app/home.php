@@ -7,16 +7,20 @@ if (isset($_SESSION["email"])) {
 }
 ?>
 
-<?php
+<body>
+    <form method="POST">
+              <div class="form-group">
+                  <input type="submit" name="submit" class="btn btn-primary" value="Pull" required>
+              </div>   
+    </form> 
+</body>
+</html>
 
-  $btc = getCoin("btc");
-  $etc = getCoin("eth");
-  $doge = getCoin("eth");
-  var_dump($btc); 
-  var_dump($etc); 
-  var_dump($doge); 
-  
-?>
+
+
+
+
+
 
 
 <!DOCTYPE html>
@@ -39,4 +43,13 @@ body {
 
 </body>
 </html>
+
+<?php
+if(isset($_POST["submit"])){
+    $coin = getCoin("btc");
+    var_dump($coin);
+
+
+}
+?>
 <?php require(__DIR__ . "/Functions/flash.php");

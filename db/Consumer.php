@@ -30,7 +30,8 @@ function request_processor($req){
 			return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
 		case "getAPI":
 			$request = getAPI($req['coin']);
-			return $request;	
+			$data = json_decode($request);
+                        $price = $data[0]["amount"];
 	}
 	return array("return_code" => '0',
 		"message" => "Server received request and processed it");

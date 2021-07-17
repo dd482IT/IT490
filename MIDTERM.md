@@ -20,6 +20,15 @@ Project Board: Click here [Project Board](https://github.com/dd482IT/IT490/proje
 
 ### Andrew Kinzler 
 
+I've worked on the database aspect of the project so far. I've handled setting up the consumer and its necessary files on the VM and created the Users table in mySQL along with the login and register sql queries.
+
+1. [DB Login] (https://github.com/dd482IT/IT490/issues/27) COMPLETED
+2. [DB Register] (https://github.com/dd482IT/IT490/issues/26) COMPLETED
+
+The only issues I have encountered have mainly been self inflicted. Making small mistakes while coding and refining the code to work properly.
+
+I have learned a ton so far from this project. Before this I had never worked with a network of computers and it's been really interesting learning about centralized logging, load balancing, along with increasing my knowledge of php and sql. 
+
 ### Daniel Daszkiewicz 
 
 So far, I worked on overall project preperation and finlization. I work a bit on everything for the project besides the game, working on database/webpage functionality and connecting it with my work completed by my team.

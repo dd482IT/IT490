@@ -110,3 +110,6 @@ The user date is stored in the session and can pull information like the email a
 The crypto game itself is currently at a good baseline and just needs to be connected into the project as a whole. 
 
 ![fe31586c99412bbf42bdf7db1ffb23aa](https://user-images.githubusercontent.com/70596795/126023395-2346529e-b273-4400-874b-47cb9eeff85f.png)
+
+
+# Youtube video that covers the project. [To YouTube!](https://youtu.be/T8Jxzd1d7ec)

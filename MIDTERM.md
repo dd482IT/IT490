@@ -22,8 +22,8 @@ Project Board: Click here [Project Board](https://github.com/dd482IT/IT490/proje
 
 I've worked on the database aspect of the project so far. I've handled setting up the consumer and its necessary files on the VM and created the Users table in mySQL along with the login and register sql queries.
 
-1. [DB Login] (https://github.com/dd482IT/IT490/issues/27) COMPLETED
-2. [DB Register] (https://github.com/dd482IT/IT490/issues/26) COMPLETED
+1. [DB Login](https://github.com/dd482IT/IT490/issues/27) COMPLETED
+2. [DB Register](https://github.com/dd482IT/IT490/issues/26) COMPLETED
 
 The only issues I have encountered have mainly been self inflicted. Making small mistakes while coding and refining the code to work properly.
 

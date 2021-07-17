@@ -55,6 +55,7 @@ So far i've learned mostly from walking along with the code thats been implement
 
 ### Patryk Ziemba 
 Most of my time on the project has been spend on the game. I manage to make the barebones of the game functional, there are some small details I need to work on still such as UI elements for coin count and health. What I have done for the game is actually being hosted on [itch.io](https://misl3d.itch.io/endlesscrypto-40). 
+
 The features the game currently has are:
 * Difficulty selection screen (currently the actual difficulty of the game doesn't change as its needs information from the webserver)
 * Player Controls using the mouse. The Player follows the cursor.
@@ -63,9 +64,11 @@ The features the game currently has are:
 * Particle Animations for breaking rocks
 * Health and Coins are counted just not displayed (yet) 
 
-The next steps of the process are to implement the webserver functionality for the game. 
 So far I learned alot, I actually scraped the first version of the game which had more of a subway surfers look but I am much happier with the version that we have now.
 I did struggle in some parts of the game, such as figuring out different unity functions and their weird quirks but with various youtube videos and google I was actually able to overcome those issues. 
+
+The next steps of the process are to implement the webserver functionality for the game. For those I will be creating a game over screen where the scores can be sent. The Start Menu is where data will be requested from the server.  
+
 
 
 ### Tyler Raymond 

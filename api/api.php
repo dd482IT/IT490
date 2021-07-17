@@ -1,10 +1,10 @@
 <?php
 //require("config.inc");
-function get_api($source) {
-	$curl = curl_init();
+function get_api() {
+	$curl = curl_init($source);
 
 	curl_setopt_array($curl, array(
-		CURLOPT_URL => "https://api.coinbase.com/v2/exchange-rates?currency=$source",
+		CURLOPT_URL => "https://api.coinbase.com/v2/prices/$source/spot",
 		CURLOPT_RETURNTRANSFER => true,
 		CURLOPT_FOLLOWLOCATION => true,
 		CURLOPT_ENCODING => "",

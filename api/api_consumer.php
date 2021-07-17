@@ -18,11 +18,16 @@ function request_processor($req){
 		return "Error: unsupported message type";
 	}
 	//Handle message type
-	$type = $req['type'];
-	switch($type){
+	$coin = $req['coin'];
+	switch($coin){
 		case "btc":
-			return get_api("btc");
+			return get_api("BTC-USD");
+		case "eth":
+			return get_api("ETH-USD"); 
+		case "doge":
+			return get_api("DOGE-USD"); 
 	}
+	
 	return array("return_code" => '0',
 		"message" => "Server received request and processed it");
 }

@@ -52,7 +52,21 @@ So far i've been helping where I can running certain services and connecting to 
 Currently researching an implementation of load balancing which will more than likely utilize AWS Elastic Load Balancing in order to route traffic successfully from one VM to another when the existing VM is not seen as healthy in that given instance. Tested creating a load balancer but still have to ensure functionality before attempting to have it work live with our existing system.
 
 So far i've learned mostly from walking along with the code thats been implemented and further gaining an understanding for how it all connects with each other. It has fleshed out a lot of topics previously covered and demonstrated in a real project how they could be executed.
+
 ### Patryk Ziemba 
+Most of my time on the project has been spend on the game. I manage to make the barebones of the game functional, there are some small details I need to work on still such as UI elements for coin count and health. What I have done for the game is actually being hosted on [itch.io](https://misl3d.itch.io/endlesscrypto-40). 
+The features the game currently has are:
+* Difficulty selection screen (currently the actual difficulty of the game doesn't change as its needs information from the webserver)
+* Player Controls using the mouse. The Player follows the cursor.
+* Random Obstacle and Coin Spawns
+* Animations for Player, Obstacles, Coins and Background.
+* Particle Animations for breaking rocks
+* Health and Coins are counted just not displayed (yet) 
+
+The next steps of the process are to implement the webserver functionality for the game. 
+So far I learned alot, I actually scraped the first version of the game which had more of a subway surfers look but I am much happier with the version that we have now.
+I did struggle in some parts of the game, such as figuring out different unity functions and their weird quirks but with various youtube videos and google I was actually able to overcome those issues. 
+
 
 ### Tyler Raymond 
 So far I have worked on more of the front end compared to the backend database stuff. Besides working on the appearance and usability of the website working on having the site request info from the database. 

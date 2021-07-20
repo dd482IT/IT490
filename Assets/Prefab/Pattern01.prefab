@@ -53,10 +53,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2647511219633601559}
-  - component: {fileID: -8948732414376531841}
+  - component: {fileID: 4502958440203031983}
   m_Layer: 0
   m_Name: Pattern01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8948732414376531841
+--- !u!114 &4502958440203031983
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,10 +86,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2647511219633601558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 775cc28b846758641951165142f48fa4, type: 3}
+  m_Script: {fileID: 11500000, guid: 75c28a4400086894f91e0095ad46fae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 2
+  lifetime: 0.1
 --- !u!1 &6801112973304054809
 GameObject:
   m_ObjectHideFlags: 0

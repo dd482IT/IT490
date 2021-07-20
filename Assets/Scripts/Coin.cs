@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    private float speed = 1.5f;
-
-
+    private float speed = 2f;
+    public GameObject effect;
 
     private void Update()
     {
@@ -17,6 +16,9 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+
+            Instantiate(effect, transform.position, Quaternion.identity);
+
             other.GetComponent<Player>().coinsCount += 1;
             Debug.Log("Coin Count: " + other.GetComponent<Player>().coinsCount);
             Destroy(gameObject);

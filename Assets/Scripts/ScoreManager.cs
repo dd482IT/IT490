@@ -11,7 +11,6 @@ public class ScoreManager : MonoBehaviour
         if (other.CompareTag("Obstacle"))
         {
             score++;
-            Debug.Log("Score: " + score);
         }
     }
 }

@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class RockController : MonoBehaviour
 {
-    public float speed = 5;
+    private float speed;
     private int damage = 1;
 
     public GameObject effect;
 
     private void Update()
     {
-
+        speed = SpeedManager.speed;
         transform.Translate(Vector2.left * speed * Time.deltaTime);
-
     }
 
     void OnTriggerEnter2D(Collider2D other)

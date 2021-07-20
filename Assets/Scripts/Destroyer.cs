@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-    public float lifetime;
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject, lifetime);
+        if (other.CompareTag("Destroyer"))
+        {
+            Destroy(gameObject);
+        }
     }
    }

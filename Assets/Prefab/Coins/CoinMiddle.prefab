@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2b0194885492a4eb7356383d45aeae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  effect: {fileID: 4145411332150708668, guid: f9dae5212822e2d4e97a9b2ca21f8d33, type: 3}
 --- !u!114 &7749523824890990434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775cc28b846758641951165142f48fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 15
 --- !u!58 &7749523824890990435
 CircleCollider2D:
   m_ObjectHideFlags: 0

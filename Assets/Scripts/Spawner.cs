@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     public float timeBewteenChange;
     public float startTimeBewteenChange = 2f;
 
-    public int coinChance = 3;
+    public int coinChance = MenuSelector.coinChance;
 
     public float distanceBetween = 5;
     

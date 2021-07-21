@@ -8,9 +8,9 @@ public class Player : MonoBehaviour
 {
     public int health = 3;
     public int coinsCount;
-    public static int finalCoins;
+    public static int Coins;
     private Vector3 mousePosition;
-    public float moveSpeed = 1000f;
+    public float moveSpeed;
     public Text healthDisplay;
     public Text coinDisplay;
 
@@ -18,20 +18,20 @@ public class Player : MonoBehaviour
     {
         healthDisplay.text = "Health: " + health.ToString();
         coinDisplay.text = "Coins: " + coinsCount.ToString();
-        finalCoins = coinsCount;
+        Coins = coinsCount;
 
         if (health <= 0)
         {
             Vector2 targetPos = new Vector2(-15, -15);
             transform.position = Vector2.MoveTowards(transform.position, targetPos, 50 * Time.deltaTime);
+            Cursor.visible = true;
             Invoke("GameOver", .5f);
         }
         else
         {
-
             mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-            if (mousePosition.x > -9.2 && mousePosition.x < 9.2 && mousePosition.y > -5.2 && mousePosition.y < 5.2)
+            if (mousePosition.x > -9.2 && mousePosition.x < 9.2 && mousePosition.y > -4.75 && mousePosition.y < 4.75)
             {
                 transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
             }

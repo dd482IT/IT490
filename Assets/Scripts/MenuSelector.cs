@@ -5,29 +5,71 @@ using UnityEngine.SceneManagement;
 
 public class MenuSelector : MonoBehaviour
 {
-
-    public static float xPos;
     public static bool GameStart = false;
+    public static float startSpeed;
 
+    public static int coinChance;
 
-    void OnMouseOver()
-    {
-        xPos = transform.position.x;
+    public static int multiplier;
 
-        if (Input.GetMouseButtonDown(0)) 
-        {
-            GameStart = true;
+    public static int selected;
 
-            Invoke("startGame", 1f);
-        }
-    }
-
+    private float Percent;
+    private float changeSpeed;
     void startGame()
     {
+        Cursor.visible = false;
         GameStart = false;
 
         SceneManager.LoadScene("EndlessCrypto");
     }
 
+    public void StartDoge()
+    {
+        coinChance = 2;
+        multiplier = 1;
+        selected = 0;
+        GameStart = true;
 
+        Percent = WebRequest.DogeChange;        
+        startSpeed = 4;
+        changeSpeed = Percent / 10;        
+        startSpeed += changeSpeed;
+
+        Invoke("startGame", 1f);
+    }
+
+    public void StartETH()
+    {
+        coinChance = 3;
+        multiplier = 2;
+        selected = 1;
+        GameStart = true;
+
+        Percent = WebRequest.EthChange;
+        startSpeed = 8;
+        changeSpeed = Percent / 10;
+
+        startSpeed += changeSpeed;
+
+
+
+
+        Invoke("startGame", 1f);
+    }
+    public void StartBTC()
+    {
+        coinChance = 4;
+        multiplier = 3;
+        selected = 2;
+        GameStart = true;
+        
+        Percent = WebRequest.BtcChange;
+        startSpeed = 12;
+        changeSpeed = Percent / 10;
+        startSpeed += changeSpeed;
+        
+
+        Invoke("startGame", 1f);
+    }
 }

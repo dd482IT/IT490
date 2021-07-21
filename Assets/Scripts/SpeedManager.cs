@@ -5,10 +5,12 @@ using UnityEngine;
 public class SpeedManager : MonoBehaviour
 {
     public static float speed;
-    public float startSpeed;
+
+    public static string Crypto;
     void Start()
     {
-        speed = startSpeed;
+        //speed = MenuSelector.startSpeed;
+        speed = 10;
         StartCoroutine("SpeedIncrease");
     }
 
@@ -17,8 +19,8 @@ public class SpeedManager : MonoBehaviour
         while (true)
         {
             Debug.Log("Speed: " + speed);
-            yield return new WaitForSeconds(15f);
-            speed += 1;
+            yield return new WaitForSeconds(7.5f);
+            speed += .5f;
         }
     }
 }

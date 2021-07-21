@@ -20,15 +20,15 @@ A10 provides an advanced solution that can monitor network traffic and therefore
 AWS Elastic Load Balancing
 
 Features:
-* A Load Balancing implementation that is baked into AWS and easily connects to existing EC2 Instances.
-* Has 4 different options available for LB creation purposes: (Application LB, Network LB, Gateway LB, or Classic LB) depending on the functionality needed for the instances or applications being connected.
+A Load Balancing implementation that is baked into AWS and easily connects to existing EC2 Instances.
+Has 4 different options available for LB creation purposes: (Application LB, Network LB, Gateway LB, or Classic LB) depending on the functionality needed for the instances or applications being connected.
  
-* I looked into this as a possible option for the project given that the resource was free to use per our existing AWS accounts being utilized for the EC2 instances.
-* The compatibility was there given that both functions live within the Amazon Virtual Private Cloud (VPC)
-* Implementation didn't seem to complex to implement and was straight forward per knowledge base articles available from Amazon
+I looked into this as a possible option for the project given that the resource was free to use per our existing AWS accounts being utilized for the EC2 instances.
+The compatibility was there given that both functions live within the Amazon Virtual Private Cloud (VPC)
+Implementation didn't seem to complex to implement and was straight forward per knowledge base articles available from Amazon
 
-* Pros - software is free, exists on the same platform, connects well with instances, and provides monitoring included within the AWS console as well as basic configuration for functions likes health checks.
-* Cons - A bit clunky in regards to setting up Load Balancers and connecting to VM and requires some additional configuration to connect the solution to specific VMs like our API and DB VMs respectively.
+Pros - software is free, exists on the same platform, connects well with instances, and provides monitoring included within the AWS console as well as basic configuration for functions likes health checks.
+Cons - A bit clunky in regards to setting up Load Balancers and connecting to VM and requires some additional configuration to connect the solution to specific VMs like our API and DB VMs respectively.
 ### Patryk Ziemba
 Avi Vantage Software Load Balancer   
 

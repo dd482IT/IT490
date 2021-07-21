@@ -17,9 +17,14 @@
 - What you learned about it and why it'd be an option
 - Pros/cons
 ### Patryk Ziemba
-- Service/Program/Solution Explored
-- What you learned about it and why it'd be an option
-- Pros/cons
+- Avi Vantage Software Load Balancer
+- Features:
+* Included in AWS Marketplace so implmentation would be fairly straightforward. 
+* Has Real-Time performance monitoring and predictive autoscaling for optimize applications.
+- Pros/cons:
+* [AWS Setup](https://avinetworks.com/docs/20.1/installing-avi-vantage-in-amazon-web-services/) looks simple, but the minimum requirements are higher than what we currently have access to
+* Very Advanced and Feature packed but its too much for what we need
+* Costs $$$ (typical pricing is ~$.40/hour)
 ### Tyler Raymond
 - Service/Program/Solution Explored
 - What you learned about it and why it'd be an option

@@ -5,9 +5,13 @@
 - What you learned about it and why it'd be an option
 - Pros/cons
 ### Andrew Kinzler
-- Service/Program/Solution Explored
-- What you learned about it and why it'd be an option
-- Pros/cons
+A10 Application Delivery & Load Balancer
+
+Features:
+A10 provides full proxy load balancers for Layers 4 and 7. Layer 4 of the OSI model handles transport protocols like TCP and UDP, A10's layer 4 load balancer makes routing decisions without the need to decrypt network traffic. 
+While Layer 7 load balancing resides in the Application layer allowing it visibility to all network data. This allows it to inspect traffic, perform TLS/SSL decryption, etc. 
+
+A10 provides an advanced solution that can monitor network traffic and therefore alleviate a lot of stress on our servers. However, A10 load balancing is not a free software and its services are well beyond what we need our load balancer to do. For that reason we have decided not to use this service, instead opting for Amazon's integrated load balancer.
 ### Daniel Daszkiewicz
 - Service/Program/Solution Explored
 - What you learned about it and why it'd be an option

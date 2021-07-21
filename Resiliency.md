@@ -17,7 +17,7 @@
 - What you learned about it and why it'd be an option
 - Pros/cons
 ### Patryk Ziemba
-Avi Vantage Software Load Balancer
+Avi Vantage Software Load Balancer 
 Features:
 * Included in AWS Marketplace so implmentation would be fairly straightforward. 
 * Has Real-Time performance monitoring and predictive autoscaling for optimize applications. 

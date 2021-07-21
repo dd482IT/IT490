@@ -28,6 +28,7 @@ The compatibility was there given that both functions live within the Amazon Vir
 Implementation didn't seem to complex to implement and was straight forward per knowledge base articles available from Amazon
 
 Pros - software is free, exists on the same platform, connects well with instances, and provides monitoring included within the AWS console as well as basic configuration for functions likes health checks.
+
 Cons - A bit clunky in regards to setting up Load Balancers and connecting to VM and requires some additional configuration to connect the solution to specific VMs like our API and DB VMs respectively.
 ### Patryk Ziemba
 Avi Vantage Software Load Balancer   

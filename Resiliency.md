@@ -23,14 +23,14 @@ provides secure access (SSL VPN). In the end, we chose to go with AWS since it w
 because it was included in our cloud enviroment.
 
 Pros of f5
--Has more features 
--Provides easier doucmentation and understanding
--Based on documentation, seems more reliable.
+1. Has more features 
+2. Provides easier doucmentation and understanding
+3. Based on documentation, seems more reliable.
 
 Cons of f5
--Costs money 
--Diffuclt to incorportate 
--Not part of enviorment 
+1. Costs money 
+2. Diffuclt to incorportate 
+3. Not part of enviorment 
 
 Implementing f5 would only be done if the features were worth the price for our project. 
 

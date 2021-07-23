@@ -22,6 +22,18 @@ concept is similar to AWS but incorprating it would require payment. The F5 load
 provides secure access (SSL VPN). In the end, we chose to go with AWS since it was simpler to understand and overall easier to implement
 because it was included in our cloud enviroment.
 
+Pros of f5
+-Has more features 
+-Provides easier doucmentation and understanding
+-Based on documentation, seems more reliable.
+
+Cons of f5
+-Costs money 
+-Diffuclt to incorportate 
+-Not part of enviorment 
+
+Implementing f5 would only be done if the features were worth the price for our project. 
+
 The process of making an AWS load balancer is simple as well. First we make an image of our clone as an AMI and then use the AMI to make a second VM (with all files intact). Then you must configure the load balancer with the service the VM's are using. In this case, 
 the load balancer has a listener on the main service port. Upon a request, the load balancer redirects the signal to the target group which are our two VMS. The most important part is configuration of the listeners, having the same security group and making sure the 
 same avaiability zone is used. At this point, a healthy load balancer can be confirmed by checking the health count as shown below. 
@@ -31,6 +43,7 @@ same avaiability zone is used. At this point, a healthy load balancer can be con
 Here you can see the two VMS's fluctuate if one goes offline. 
 
 ![b0437228709bb001135458803876273d](https://user-images.githubusercontent.com/70596795/126726156-6e1ce8ba-b745-4eaf-8c48-98d0401196ee.png)
+
 
 
 

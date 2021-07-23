@@ -29,7 +29,7 @@ Pros of f5
 
 Cons of f5
 1. Costs money 
-2. Diffuclt to incorportate 
+2. Difficult to incorportate 
 3. Not part of enviorment 
 
 Implementing f5 would only be done if the features were worth the price for our project. 

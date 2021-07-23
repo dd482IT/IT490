@@ -76,7 +76,19 @@ Pros/cons:
 * Very Advanced and Feature packed but its too much for what we need
 * Costs $$$ (typical pricing is ~$.40/hour)
 ### Tyler Raymond
-- Service/Program/Solution Explored
-- What you learned about it and why it'd be an option
-- Pros/cons
+Radware's Alteon Network Load Balancer
+- Features
+  - Provides end to end local and global load balancing for in our case web applications
+  - While Alteon is listed with other load balancers, it is not quite only a load balancer but is also an application delivery controller (ADC). Load balancing is only a feature of it. This is obviously much more than what we needed and we ended up gowing with the built in AWS load balancer.
+
+- Pros
+  - Scalable
+  - Smart (Has monitoring features and health checkups)
+  - DoS mitgiation
+  - Easy Updates
+
+- Cons
+  - Affordable (We need something free and temporary)
+  - Does way more than what we actually need
+  - Must integrate it into our project compared to the built in AWS solution
 

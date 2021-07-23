@@ -15,9 +15,28 @@ While Layer 7 load balancing resides in the Application layer allowing it visibi
 A10 provides an advanced solution that can monitor network traffic and therefore alleviate a lot of stress on our servers. However, A10 load balancing is not a free software and its services are well beyond what we need our load balancer to do. For that reason we have decided not to use this service, instead opting for Amazon's integrated load balancer.
 ![Database Load Balancer](https://user-images.githubusercontent.com/49198431/126721811-4d1c5ac7-cb21-4951-a80d-13cb95e92c34.PNG)
 ### Daniel Daszkiewicz
-- Service/Program/Solution Explored
-- What you learned about it and why it'd be an option
-- Pros/cons
+
+The F5 Load balancer is a popular load balancer and used by some of the world's biggest IT depertments. The load balancer supports azure, aws and more. 
+The f5 load load balancer is explained as combining multiple hosts to make a cluster. The overall
+concept is similar to AWS but incorprating it would require payment. The F5 load balancer
+provides secure access (SSL VPN). In the end, we chose to go with AWS since it was simpler to understand and overall easier to implement
+because it was included in our cloud enviroment.
+
+The process of making an AWS load balancer is simple as well. First we make an image of our clone as an AMI and then use the AMI to make a second VM (with all files intact). Then you must configure the load balancer with the service the VM's are using. In this case, 
+the load balancer has a listener on the main service port. Upon a request, the load balancer redirects the signal to the target group which are our two VMS. The most important part is configuration of the listeners, having the same security group and making sure the 
+same avaiability zone is used. At this point, a healthy load balancer can be confirmed by checking the health count as shown below. 
+
+![be4d6fbb95c992a21c0dcf4374204571](https://user-images.githubusercontent.com/70596795/126726202-b14bd801-89b5-421e-8c14-37826e9cd87f.png)
+
+Here you can see the two VMS's fluctuate if one goes offline. 
+
+![b0437228709bb001135458803876273d](https://user-images.githubusercontent.com/70596795/126726156-6e1ce8ba-b745-4eaf-8c48-98d0401196ee.png)
+
+
+
+
+
+
 ### Kevin Delgado
 AWS Elastic Load Balancing
 

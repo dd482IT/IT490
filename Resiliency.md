@@ -3,7 +3,7 @@
 ## Research - Resiliency solution
 
 ### Adem Coklar
-Citrix ADC is a great service that incorporates Cisco's Application Policy Infreastruce Controller. This automates the networks provisioning and controls based on the applications' requirments and policies. I've learned a lot about Citrix ADC and what it has to offer, including an optional Global Server Load Balancing feature that enables organizations to deliver apps from different georgraphical areas. It will redirect users to a backup data center if there were ever to be a failure. 
+Citrix ADC is a great service that incorporates Cisco's Application Policy Infreastruce Controller. This automates the networks provisioning and controls based on the applications' requirments and policies. I've learned a lot about Citrix ADC and what it has to offer, including an optional Global Server Load Balancing feature that enables organizations to deliver apps from different georgraphical areas. It will redirect users to a backup data center if there were ever to be a failure. Some cons that people have reported while using Citrix is that the policy engine syntax could be difficult to learn, as well as having trouble navigating the UI.
 ![Capture](https://user-images.githubusercontent.com/55860846/126875199-8efd6b2f-f5ae-4ef5-9692-4c74cbfd8492.PNG)
 
 

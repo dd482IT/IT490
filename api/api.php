@@ -1,6 +1,6 @@
 <?php
 //require("config.inc");
-function get_api() {
+function get_api($source) {
 	$curl = curl_init($source);
 
 	curl_setopt_array($curl, array(

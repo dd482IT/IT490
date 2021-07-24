@@ -14,9 +14,9 @@ require(__DIR__ . '/api.php');
 function request_processor($req){
 	echo "Received Request".PHP_EOL;
 	echo "<pre>" . var_dump($req) . "</pre>";
-	//if(!isset($req['coin'])){
-	////	return "Error: unsupported message type";
-	//}
+	if(!isset($req['coin'])){
+	 return "Error: unsupported message type";
+	}
 	//Handle message type
 	$coin = $req['coin'];
 	switch($coin){

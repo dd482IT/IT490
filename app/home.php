@@ -100,22 +100,7 @@
 <?php
 if(isset($_POST["submit"])){
     $btc = getCoin(1, "btc");
-    $btc_data = json_decode($btc, true);
-    $btc_value = $btc_data['coin_value'];
-    $btc_pc = $btc_data['percent_change'];
-    //var_dump($btc_value);
-    sleep(3);
-    $eth = getCoin(3, "eth");
-    $eth_data = json_decode($eth, true);
-    $eth_value = $eth_data['coin_value'];
-    $eth_pc = $eth_data['percent_change'];
-    var_dump($eth_value);
-    sleep(3);
-    $doge = getCoin(2, "doge");
-    $doge_data = json_decode($doge, true);
-    $doge_value = $doge_data['coin_value'];
-    $doge_pc = $doge_data['percent_change'];
-    var_dump($doge_value);
+    var_dump($btc);
 
 }
 ?>

@@ -8,7 +8,7 @@ function getCoin($id, $coin){
 		require_once(__DIR__.'/../../lib/rabbitMQLib.inc');
 		require_once(__DIR__ . "/../Functions/safe_echo.php");
 		$client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
-		$msg = array("id"=> $id, "coin"=>$coin,"type"=>"get_all");
+		$msg = array("id"=> $id, "coin"=>$coin,"type"=>"getAPI");
 		$response = $client->send_request($msg);
 		return $response;
 	}

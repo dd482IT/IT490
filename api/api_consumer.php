@@ -14,9 +14,9 @@ require(__DIR__ . '/api.php');
 function request_processor($req){
 	echo "Received Request".PHP_EOL;
 	echo "<pre>" . var_dump($req) . "</pre>";
-	if(!isset($req['type'])){
-		return "Error: unsupported message type";
-	}
+	//if(!isset($req['coin'])){
+	////	return "Error: unsupported message type";
+	//}
 	//Handle message type
 	$coin = $req['coin'];
 	switch($coin){
@@ -26,7 +26,7 @@ function request_processor($req){
 			return get_api("ETH-USD"); 
 		case "doge":
 			return get_api("DOGE-USD"); 
-		case "all":
+		case "get_all":
 			$coins = array("BTC-USD","ETH-USD","DOGE-USD");
 			$temp_arr = array();
 			$data = array();

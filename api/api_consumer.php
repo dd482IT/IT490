@@ -26,6 +26,16 @@ function request_processor($req){
 			return get_api("ETH-USD"); 
 		case "doge":
 			return get_api("DOGE-USD"); 
+		case "all":
+			$coins = array("BTC-USD","ETH-USD","DOGE-USD");
+			$temp_arr = array();
+			$data = array();
+			foreach ($coins as $coin) {
+				$request = get_api($coin);
+				$temp_arr = array("$coin"=>$request);
+				$data = $data + $temp_arr;
+			}
+			return json_encode($data); 
 	}
 	
 	return array("return_code" => '0',

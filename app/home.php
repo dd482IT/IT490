@@ -1,38 +1,18 @@
 <?php require_once(__DIR__ . "/nav.php"); 
 ?>
-<?php
-$email = "";
-if (isset($_SESSION["email"])) {
-    $email = $_SESSION["email"];
-}
-?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
     <title>Covineer Home</title>
-    <div class="home">    <p>Welcome, <?php echo $email; ?></p> </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../../../../favicon.ico">
-
-    <!-- Bootstrap core CSS -->
     <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="/styles/pricing.css" rel="stylesheet">
 
-    <!--     
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Covineers</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="/app/login.php">Login</a>
-        <a class="p-2 text-dark" href="/app/home.php">Home</a>
-        <a class="p-2 text-dark" href="/app/game.php">Play</a>
-      </nav>
-      <a class="btn btn-outline-primary" href="/app/register.php">Register</a>
-    </div>
--->      
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4">Coins</h1>
       <p class="lead">Our game offers a number of crypto coin to choose from.</p>
@@ -62,7 +42,7 @@ if (isset($_SESSION["email"])) {
             <h4 class="my-0 font-weight-normal">Ethereum</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$6 <small class="text-muted">/ mo</small></h1>
+            <h1 class="card-title pricing-card-title"></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>Description</li>
               <li>Filler</li>
@@ -78,7 +58,7 @@ if (isset($_SESSION["email"])) {
             <h4 class="my-0 font-weight-normal">Bitcoin</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$7 <small class="text-muted">/ mo</small></h1>
+            <h1 class="card-title pricing-card-title"></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>Description</li>
               <li>Filler</li>
@@ -117,13 +97,29 @@ if (isset($_SESSION["email"])) {
 </body>
 </html>
 
-
 <?php
 if(isset($_POST["submit"])){
-    $coin = getCoin("btc");
-    var_dump($coin);
-
+    $btc = getCoin(1, "btc");
+    $btc_data = json_decode($btc, true);
+    $btc_value = $btc_data['coin_value'];
+    $btc_pc = $btc_data['percent_change'];
+    //var_dump($btc_value);
+    sleep(3);
+    $eth = getCoin(3, "eth");
+    $eth_data = json_decode($eth, true);
+    $eth_value = $eth_data['coin_value'];
+    $eth_pc = $eth_data['percent_change'];
+    var_dump($eth_value);
+    sleep(3);
+    $doge = getCoin(2, "doge");
+    $doge_data = json_decode($doge, true);
+    $doge_value = $doge_data['coin_value'];
+    $doge_pc = $doge_data['percent_change'];
+    var_dump($doge_value);
 
 }
 ?>
+
+
+
 <?php require(__DIR__ . "/Functions/flash.php");

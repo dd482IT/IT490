@@ -5,6 +5,8 @@ require_once(__DIR__ . "/Functions/flash_functions.php");
 require_once(__DIR__ . "/MQFunctions/getCoin.php");
 ?>
 
+
+
 <link rel="stylesheet" href="/styles/nav.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -40,6 +42,8 @@ require_once(__DIR__ . "/MQFunctions/getCoin.php");
       </li>
       <li class="nav-item ms-auto text-center">
           <a class="nav-link"  href="logout.php">Logout</a>
+      </li>
+      <li class="nav-item ms-auto text-center">
       </li>
       <?php endif; ?>
     </ul>

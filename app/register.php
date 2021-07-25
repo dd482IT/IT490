@@ -106,17 +106,14 @@ if(isset($_POST["submit"])){
 	
 	if($response->status == 200){
 		flash("Sucessful account creation!");
-		//die(header("Location: /app/login.php"));
-		var_dump($response);
+		die(header("Location: /app/login.php"));
 	}
 	elseif($response->status == 200){
 		flash("Account already exists!");
-		//die();
-		var_dump($response);
+		die();
 	}else{
 		flash("There was an error");
-		//die();
-		var_dump($response);
+		die();
 	}
 	
 

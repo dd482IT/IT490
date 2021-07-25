@@ -1,4 +1,5 @@
 <?php require_once(__DIR__ . "/nav.php"); 
+session_start();
 ?>
 <?php
 $coins = getAll();

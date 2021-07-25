@@ -22,7 +22,7 @@ public class RockController : MonoBehaviour
             Instantiate(effect, transform.position, Quaternion.identity);
 
             other.GetComponent<Player>().health -= damage;
-            Debug.Log("Health: " + other.GetComponent<Player>().health);
+            //Debug.Log("Health: " + other.GetComponent<Player>().health);
             Destroy(gameObject);
         }
     }

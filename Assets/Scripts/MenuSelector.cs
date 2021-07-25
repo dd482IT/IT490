@@ -31,7 +31,7 @@ public class MenuSelector : MonoBehaviour
         selected = 0;
         GameStart = true;
 
-        Percent = WebRequest.DogeChange;        
+        Percent = WebRequest.dogeChange;        
         startSpeed = 4;
         changeSpeed = Percent / 10;        
         startSpeed += changeSpeed;
@@ -46,14 +46,11 @@ public class MenuSelector : MonoBehaviour
         selected = 1;
         GameStart = true;
 
-        Percent = WebRequest.EthChange;
+        Percent = WebRequest.ethChange;
         startSpeed = 8;
         changeSpeed = Percent / 10;
 
         startSpeed += changeSpeed;
-
-
-
 
         Invoke("startGame", 1f);
     }
@@ -64,7 +61,7 @@ public class MenuSelector : MonoBehaviour
         selected = 2;
         GameStart = true;
         
-        Percent = WebRequest.BtcChange;
+        Percent = WebRequest.btcChange;
         startSpeed = 12;
         changeSpeed = Percent / 10;
         startSpeed += changeSpeed;

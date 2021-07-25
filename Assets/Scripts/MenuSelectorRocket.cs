@@ -27,10 +27,6 @@ public class MenuSelectorRocket : MonoBehaviour
                 transform.position = Vector2.Lerp(transform.position, pos, moveSpeed);
             }
         }
-
-
-
-
     }
 }
 

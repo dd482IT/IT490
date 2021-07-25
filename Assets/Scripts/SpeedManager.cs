@@ -9,8 +9,7 @@ public class SpeedManager : MonoBehaviour
     public static string Crypto;
     void Start()
     {
-        //speed = MenuSelector.startSpeed;
-        speed = 10;
+        speed = MenuSelector.startSpeed;
         StartCoroutine("SpeedIncrease");
     }
 
@@ -18,7 +17,7 @@ public class SpeedManager : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("Speed: " + speed);
+            //Debug.Log("Speed: " + speed);
             yield return new WaitForSeconds(7.5f);
             speed += .5f;
         }

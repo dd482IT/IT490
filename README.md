@@ -1,3 +1,3 @@
 # IT490
 
-https://misl3d.itch.io/endlesscrypto-40
+Game Build is in [WebGame](/WebGame) Folder

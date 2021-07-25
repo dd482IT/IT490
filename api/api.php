@@ -1,8 +1,7 @@
 <?php
 //require("config.inc");
-function get_api($source) {
+function get_api() {
 	$curl = curl_init($source);
-
 	curl_setopt_array($curl, array(
 		CURLOPT_URL => "https://api.coinbase.com/v2/prices/$source/spot",
 		CURLOPT_RETURNTRANSFER => true,

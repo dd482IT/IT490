@@ -1,6 +1,9 @@
 <?php require_once(__DIR__ . "/nav.php"); 
 ?>
-
+<?php
+$coins = getAll();
+$data = json_decode($coins, true);
+?>
 
 
 <!DOCTYPE html>
@@ -16,6 +19,7 @@
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4">Coins</h1>
       <p class="lead">Our game offers a number of crypto coin to choose from.</p>
+      <p class="lead">The game also changes based on coin performance. A higher value, results in a higher difficulty.</p>
     </div>
 
     <div class="container">
@@ -26,12 +30,14 @@
             <h4 class="my-0 font-weight-normal">Dogecoin</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$5 <small class="text-muted">/ mo</small></h1>
+            <h1 class="card-title pricing-card-title"><?php safer_echo("$". $data['doge']['coin_value']);?></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Description</li>
-              <li>Filler</li>
-              <li>Filler</li>
-              <li>Filler</li>
+              <li> You have to sync with the blockchain to use Dogecoin. MultiDoge is a "light" wallet. It syncs with the blockchain by "skimming" through the blockchain, providing fast sync times. Dogecoin Core, on the other hand, is a "full" wallet. It syncs by downloading it, providing a solid-working Dogecoin wallet.  </li>
+              <br>
+              <br>  
+              <br>
+              <li><b>Percent Change: </b><?php safer_echo($data['doge']['percent_change'] . "%");?></li>
+              <li><b>Price as of: </b><?php safer_echo($data['doge']['pull_date']);?></li>
             </ul>
             <a href="https://dogecoin.com/" class="btn btn-lg btn-block btn-primary" role="button">Learn More</a>
           </div>
@@ -42,12 +48,15 @@
             <h4 class="my-0 font-weight-normal">Ethereum</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title"></h1>
+          <h1 class="card-title pricing-card-title"><?php safer_echo("$". $data['eth']['coin_value']);?></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Description</li>
-              <li>Filler</li>
-              <li>Filler</li>
-              <li>Filler</li>
+              <li>ETH is a cryptocurrency. It is scarce digital money that you can use on the internet – similar to Bitcoin. ETH is a cryptocurrency. 
+              You can send your ETH without any intermediary service like a bank. It's like handing cash over in-person, but you can do it securely with anyone, anywhere, anytime.
+              You only need an internet connection and a wallet to accept ETH. 
+              </li>
+              <br>
+              <li><b>Percent Change: </b><?php safer_echo($data['eth']['percent_change'] . "%");?></li>
+              <li><b>Price as of: </b><?php safer_echo($data['eth']['pull_date']);?></li>
             </ul>
             <a href="https://ethereum.org/en/" class="btn btn-lg btn-block btn-primary" role="button">Learn More</a>
           </div>
@@ -58,12 +67,17 @@
             <h4 class="my-0 font-weight-normal">Bitcoin</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title"></h1>
+          <h1 class="card-title pricing-card-title"><?php safer_echo("$". $data['btc']['coin_value']);?></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Description</li>
-              <li>Filler</li>
-              <li>Filler</li>
-              <li>Filler</li>
+              <li>Bitcoin uses peer-to-peer technology to operate with no central authority or banks; 
+                managing transactions and the issuing of bitcoins is carried out collectively by the network.
+                 Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. 
+              </li>
+              <br>
+              <br>
+              <br>
+              <li><b>Percent Change: </b><?php safer_echo($data['btc']['percent_change'] . "%");?></li>
+              <li><b>Price as of: </b><?php safer_echo($data['btc']['pull_date']);?></li>
             </ul>
             <a href="https://bitcoin.org/en/" class="btn btn-lg btn-block btn-primary" role="button">Learn More</a>
           </div>
@@ -87,23 +101,6 @@
       });
     </script>
 </html>
-
-<body>
-    <form method="POST">
-              <div class="form-group">
-                  <input type="submit" name="submit" class="btn btn-primary" value="Pull" required>
-              </div>   
-    </form> 
-</body>
-</html>
-
-<?php
-if(isset($_POST["submit"])){
-    $btc = getCoin(1, "btc");
-    var_dump($btc);
-
-}
-?>
 
 
 

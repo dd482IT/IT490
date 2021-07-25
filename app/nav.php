@@ -26,22 +26,22 @@ require_once(__DIR__ . "/MQFunctions/getCoin.php");
       <li class="nav-item">
         <a class="nav-link" href="/app/register.php">Register</a>
       </li>
-      <li class="nav-item">
-          <a class="nav-link"  href="home.php"> Home </a>
-      </li>
       <?php endif; ?>
       <?php if(is_logged_in()): ?>
       <li class="nav-item">
-        <a class="nav-link" href="profile.php">Profile</a>
+        <a class="nav-link" href="/app/home.php">Home</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/app/profile.php">Profile</a>
       </li> 
       <li class="nav-item ms-auto text-center">
-          <a class="nav-link"  href="game.php">Game</a>
+          <a class="nav-link"  href="/app/WebGame3/game.php?user_id=<?php echo($_SESSION['user']);?>">Game</a>
       </li>
       <li class="nav-item ms-auto text-center">
-          <a class="nav-link"  href="store.php">Store</a>
+          <a class="nav-link"  href="/app/store.php">Store</a>
       </li>
       <li class="nav-item ms-auto text-center">
-          <a class="nav-link"  href="logout.php">Logout</a>
+          <a class="nav-link"  href="/app/logout.php">Logout</a>
       </li>
       <li class="nav-item ms-auto text-center">
       </li>

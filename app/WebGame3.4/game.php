@@ -16,6 +16,11 @@ session_start();
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
+  <style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+</style>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
@@ -92,5 +97,19 @@ session_start();
       };
       document.body.appendChild(script);
     </script>
+
+    <div class="myDiv">
+      <h2 { text-align: center }>Endless Crypto</h2>
+      <pre>Using the mouse to control the rocket to collect coins and avoid the asteriods.  
+    The Game has 3 Difficulties: Dogecoin, Etherum and Bitcoin ie. Easy, Normal, Hard.   
+    Based on the Percent Change with each currency the difficulty changes  
+    ex. If BTC is down the game will start easier.   
+
+    The Speed of the game will slowly increase as time goes on (there is no limit)  
+
+    Once you crash the game will be over and the coins collected are multiplied based on the difficulty  
+    ie. DogeCoin: No Multiplier, Etherum: 2x, Bitcoin 3x</pre>
+    </div>
+    
   </body>
 </html>

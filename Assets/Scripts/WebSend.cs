@@ -14,8 +14,9 @@ public class WebSend : MonoBehaviour
     public Text ifError;
     private int Coins;
 
-    readonly string sendURL = "https://54.83.92.194/app/gameDownload.php";
-
+    readonly string sendURL = "http://54.83.92.194/app/gameDownload.php";
+    //readonly string sendURL = "http://server.misl3d.xyz/sendScore.php";
+   
     private int finalCoins;
     void Start()
     {
@@ -31,11 +32,12 @@ public class WebSend : MonoBehaviour
         form.AddField("user", id);
         form.AddField("coin", Coins);
         form.AddField("score", Score);
-        form.AddField("multi", multiplier);
         
         UnityWebRequest www = UnityWebRequest.Post(sendURL, form);
         www.timeout = 5;
-        yield return www;
+        
+        yield return www.SendWebRequest();
+
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
@@ -43,7 +45,7 @@ public class WebSend : MonoBehaviour
         }
         else
         {
-            Debug.Log(www.downloadHandler.text);
+            ifError.text = "Scores Sent";
         }
     }
 
@@ -57,7 +59,10 @@ public class WebSend : MonoBehaviour
         }
         else
         {
-            id = "error";
+            Debug.Log("Testing");
+            id = "21";
+            Coins = 404;
+            Score = 404;
         }
     }
 

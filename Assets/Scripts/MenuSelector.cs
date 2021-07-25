@@ -33,7 +33,7 @@ public class MenuSelector : MonoBehaviour
 
         Percent = WebRequest.dogeChange;        
         startSpeed = 4;
-        changeSpeed = Percent / 10;        
+        changeSpeed = Percent;        
         startSpeed += changeSpeed;
 
         Invoke("startGame", 1f);

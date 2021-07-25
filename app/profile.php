@@ -2,6 +2,9 @@
 require_once(__DIR__ . "/nav.php");
 require(__DIR__."/MQPublish.inc.php");
 require_once(__DIR__ . "/Functions/safe_echo.php");
+if(!is_logged_in()){
+  die(header("Location: /app/login.php"));
+}
 session_start();
 ?>
 

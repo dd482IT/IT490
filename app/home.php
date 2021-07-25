@@ -1,5 +1,10 @@
 <?php require_once(__DIR__ . "/nav.php"); 
+require_once(__DIR__ . "/Functions/isLoggedIn.php");
+if(!is_logged_in()){
+  die(header("Location: /app/login.php"));
+}
 session_start();
+
 ?>
 <?php
 $coins = getAll();

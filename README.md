@@ -12,6 +12,6 @@ ex. If BTC is down the game will start easier.
 
 The Speed of the game will slowly increase as time goes on (there is no limit)  
 
-Once you crash the game will be over where the coins are multiplied based on the difficulty  
+Once you crash the game will be over and the coins collected are multiplied based on the difficulty  
 ie. DogeCoin: No Multiplier, Etherum: 2x, Bitcoin 3x
   

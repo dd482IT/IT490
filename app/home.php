@@ -82,7 +82,40 @@ $data = json_decode($coins, true);
             <a href="https://bitcoin.org/en/" class="btn btn-lg btn-block btn-primary" role="button">Learn More</a>
           </div>
         </div>
-      </div>
+    </div>
+
+  <div class="card-group">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">High Scores</h1>
+    <p class="lead">These are the top 3 players of the game</p>
+  </div>
+  <div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+
+  
 
 
       <!-- Bootstrap core JavaScript

@@ -35,7 +35,7 @@ require_once(__DIR__ . "/MQFunctions/getCoin.php");
         <a class="nav-link" href="/app/profile.php">Profile</a>
       </li> 
       <li class="nav-item ms-auto text-center">
-          <a class="nav-link"  href="/app/WebGame3.3/game.php?user_id=<?php echo($_SESSION['user']);?>">Game</a>
+          <a class="nav-link"  href="/app/WebGame3.4/game.php?user_id=<?php echo($_SESSION['user']);?>">Game</a>
       </li>
       <li class="nav-item ms-auto text-center">
           <a class="nav-link"  href="/app/store.php">Store</a>
@@ -44,7 +44,7 @@ require_once(__DIR__ . "/MQFunctions/getCoin.php");
           <a class="nav-link"  href="/app/logout.php">Logout</a>
       </li>
       <li class="nav-item ms-auto text-center">
-        <a class="nav-link"><?php echo($_SESSION['email']);?></a>
+        <a id="userEmail" class="nav-link"><?php echo($_SESSION['email']);?></a>
       </li>
       <?php endif; ?>
     </ul>

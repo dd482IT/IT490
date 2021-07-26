@@ -1,5 +1,6 @@
 <?php require_once(__DIR__ . "/nav.php"); 
 require_once(__DIR__ . "/Functions/isLoggedIn.php");
+require_once(__DIR__ . "/MQFunctions/getHighScores.php");
 if(!is_logged_in()){
   die(header("Location: /app/login.php"));
 }
@@ -8,6 +9,9 @@ session_start();
 ?>
 <?php
 $coins = getAll();
+$players = getHighScores();
+$playerData = json_decode($players, true);
+var_export($playerData);
 $data = json_decode($coins, true);
 ?>
 

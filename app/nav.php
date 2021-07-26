@@ -3,6 +3,8 @@ session_start();
 require_once(__DIR__ . "/Functions/isLoggedIn.php");
 require_once(__DIR__ . "/Functions/flash_functions.php");
 require_once(__DIR__ . "/MQFunctions/getCoin.php");
+
+require_once(__DIR__ . "/MQFunctions/getHighScores.php");
 ?>
 
 

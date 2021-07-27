@@ -1,15 +1,6 @@
 <?php
-function lastCall($coin_name){
-        $id = 0;
+function lastCall($id){
         $date = date('Y-m-d H:i:s');
-        switch($coin_name){
-                case "btc":
-                        $id = 1;
-                case "doge":
-                        $id = 2;
-                case "eth":
-                        $id = 3;
-        }
         try{
         $stmt = getDB()->prepare("SELECT * FROM CryptoCoins WHERE id = :id");
         $stmt->execute([":id"=>$id]);
@@ -33,4 +24,5 @@ function lastCall($coin_name){
 
 }
 ?>
+
 ~

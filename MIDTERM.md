@@ -38,8 +38,8 @@ So far, I learned much more about the overall work flow that needs to be maintai
 ### Kevin Delgado 
 So far i've been helping where I can running certain services and connecting to the main VM to ensure connectivity from other instances. Helped out with changing some code to implement the flash messages that appear on the registration and login page after entries are made. 
 
-1. [Implementing load balancer](https://github.com/dd482IT/IT490/issues/41) In progress
-2. [Creating duplicate VMs](https://github.com/dd482IT/IT490/issues/40) In progress
+1. [Implementing load balancer](https://github.com/dd482IT/IT490/issues/41) Completed
+2. [Creating duplicate VMs](https://github.com/dd482IT/IT490/issues/40) Completed
 
 Currently researching an implementation of load balancing which will more than likely utilize AWS Elastic Load Balancing in order to route traffic successfully from one VM to another when the existing VM is not seen as healthy in that given instance. Tested creating a load balancer but still have to ensure functionality before attempting to have it work live with our existing system.
 

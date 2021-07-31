@@ -153,38 +153,38 @@
   * modified
 
 * **Daniel**
-    Summarize what you worked on thus far
-    List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    Issues personally encountered/dealt with 
-    Highlighted learnings/experiences
+    * Summarize what you worked on thus far
+    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
+    * Issues personally encountered/dealt with 
+    * Highlighted learnings/experiences
     
- * **Andrew**
-    Summarize what you worked on thus far
-    List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    Issues personally encountered/dealt with 
-    Highlighted learnings/experiences
+* **Andrew**
+    * Summarize what you worked on thus far
+    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
+    * Issues personally encountered/dealt with 
+    * Highlighted learnings/experiences
     
- * **Adem**
-    Summarize what you worked on thus far
-    List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    Issues personally encountered/dealt with 
-    Highlighted learnings/experiences
+* **Adem**
+    * Summarize what you worked on thus far
+    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
+    * Issues personally encountered/dealt with 
+    * Highlighted learnings/experiences
     
 * **Tyler**
-    Summarize what you worked on thus far
-    List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    Issues personally encountered/dealt with 
-    Highlighted learnings/experiences
+    * Summarize what you worked on thus far
+    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
+    * Issues personally encountered/dealt with 
+    * Highlighted learnings/experiences
     
 * **Patryk**
-    Summarize what you worked on thus far
-    List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    Issues personally encountered/dealt with 
-    Highlighted learnings/experiences
+    * Summarize what you worked on thus far
+    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
+    * Issues personally encountered/dealt with 
+    * Highlighted learnings/experiences
     
 * **Kevin**
-    Summarize what you worked on thus far
-    List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    Issues personally encountered/dealt with 
-    Highlighted learnings/experiences
+    * Summarize what you worked on thus far
+    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
+    * Issues personally encountered/dealt with 
+    * Highlighted learnings/experiences
 

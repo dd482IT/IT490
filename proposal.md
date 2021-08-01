@@ -183,8 +183,11 @@
     * Highlighted learnings/experiences
     
 * **Kevin**
-    * Summarize what you worked on thus far
-    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    * Issues personally encountered/dealt with 
-    * Highlighted learnings/experiences
-
+    * Thus far for the overall project, I worked mainly on some of the initial login script implementations with the help of my teammates. Did research on the load balancer we decided to utilize for the project which ended up being AWS Elastic Load Balancing. Went over the process of cloning existing VMs with all of their existing contents so VM A was identical to VM B. Created a test load balancer as template to ensure VMs were communicating with load balancer and reporting back healthy. Aside from that, I helped out whereever I could on smaller functions and mostly researched possible solutions.
+    ## Issues worked on with team for project implementation
+    * https://github.com/dd482IT/IT490/issues/41 (Implenting Load Balancer, Done)
+    * https://github.com/dd482IT/IT490/issues/40 (Creating duplicate VMs for Production, Done)
+    * https://github.com/dd482IT/IT490/issues/11 (Create the Login Form, Done) 
+    * Ultimately I learned most of what occurred throughout the project from my team. Thankfully we had members that were well versed with the utilization of PHP, MySQL, and bash to name a few functions, so it was interesting to say the least seeing how the overall project interconnected and worked together to provide an end product. Personally, I don't know how to code well, so the team breaking down attributes, arrays, calls and how certain functions work helped with my understanding of where these things are used when implementing them for game development and website structure. Even though it does not entail in what I envision myself doing going forward, the knowledge gained from the experience has been unique and helped me develop with my worldview of all that goes in to the sites, apps, and games we utilize on a daily basis. Was fortunate to have been able to work with great teammates and only wish I could have been a greater asset to finalizing the finsihed product.
+    
+ 

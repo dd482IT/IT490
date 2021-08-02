@@ -160,7 +160,7 @@
     * The major lessons learned from working on the project is how services like AWS (VMs) allow companies to easily get their services up and running. I also gained experience making my own work flow, managment style and organization using github. On the more technical side, I learned a lot about JSON, the capability of VMS, how an API works and how to encporate everything into a project. 
     * Here is an image of the homepage using the API (entire DB site handled by Andrew) 
     * ![0d03a60c2d2634b865a35c668c9ccc4c](https://user-images.githubusercontent.com/70596795/127909765-02c8f13c-a622-4505-8723-c94ed2a64d0a.png)
-    * Here is an image of the game using the API (entire game created by Patryk
+    * Here is an image of the game using the API (entire game created by Patryk)
     * ![540add50d038f2ffab7902320f7ca594](https://user-images.githubusercontent.com/70596795/127909782-7dce742e-50e0-4faa-a22e-be2eb9023d30.png)
     
     ## Here is a big change in the API functionality. Calling the API for each coin invidiually caused queue locks so we make a batch call instead. 
@@ -212,10 +212,20 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
     * Highlighted learnings/experiences
     
 * **Patryk**
-    * Summarize what you worked on thus far
-    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    * Issues personally encountered/dealt with 
-    * Highlighted learnings/experiences
+    * The Game is most of what I worked on. It was made entirely with Unity and as for the server part I worked on the game client parts while Andrew and Daniel worked to implement the server-side parts such as MQ and DB. 
+      - [Game Branch](https://github.com/dd482IT/IT490/tree/Game)
+    * Issues/ Project Board Items
+    - [Project Board 1](https://github.com/dd482IT/IT490/projects/1?card_filter_query=assignee%3Amisl3d)
+    - [Project Board 2](https://github.com/dd482IT/IT490/projects/1?card_filter_query=author%3Amisl3d)
+    * Issues I dealt with: 
+    - Personal Server used for testing was configured alittle differently so when testing WebRequest and WebSends, Unity would disagree with http and only accepted https. (Took me 1+ Hours to figure that out 😭)
+    - Wasted about  3 days for the first version of the game which was going to be more subway surfer style of top down a endless runner. If I proceeded with that route it would have probably been terrible, but switched to the doge to moon concept instead and it worked out.
+    * Learnings and Experiences:
+      - Unity and C++ 
+      - tiny bit of php invloding webrequests and sends from Unity
+      - Unity Server stuff
+      - Unity Graphic animation
+      - Time management when working in a group
     
 * **Kevin**
     * Thus far for the overall project, I worked mainly on some of the initial login script implementations with the help of my teammates. Did research on the load balancer we decided to utilize for the project which ended up being AWS Elastic Load Balancing. Went over the process of cloning existing VMs with all of their existing contents so VM A was identical to VM B. Created a test load balancer as template to ensure VMs were communicating with load balancer and reporting back healthy. Aside from that, I helped out whereever I could on smaller functions and mostly researched possible solutions.

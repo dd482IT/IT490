@@ -156,7 +156,12 @@
     * I worked on a bit of everything in the project but my focus was anything related to rabbitMQ and the API consumer. I assissted my team mates where I could and gave out taskes 	   where neccessary. 
     * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
     * The biggest issues I encountered were pulling data from requests, not knowing they were json encoded. I also had extreme difficulty with rabbitMQ queue locks and put me in situations where the project would just stop functioning. The smallest issue was configuring new VMS for the load balancer making sure all the packages were present. 
-    * The major lessons learned from working on the project is how services like AWS (VMs) allow companies to easily get their services up and running. I also gained experience making my own work flow, managment style and organization using github. On the more technical side, I learned a lot about JSON, the capability of VMS, how an API works and how to encporate them into projects. 
+    * The major lessons learned from working on the project is how services like AWS (VMs) allow companies to easily get their services up and running. I also gained experience making my own work flow, managment style and organization using github. On the more technical side, I learned a lot about JSON, the capability of VMS, how an API works and how to encporate everything into a project. 
+    * Here is an image of the homepage using the API (entire DB site handled by Andrew) 
+    * ![0d03a60c2d2634b865a35c668c9ccc4c](https://user-images.githubusercontent.com/70596795/127909765-02c8f13c-a622-4505-8723-c94ed2a64d0a.png)
+    * Here is an image of the game using the API (entire game created by Patryk
+    * ![540add50d038f2ffab7902320f7ca594](https://user-images.githubusercontent.com/70596795/127909782-7dce742e-50e0-4faa-a22e-be2eb9023d30.png)
+
     
 * **Andrew**
     * Summarize what you worked on thus far

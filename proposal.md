@@ -1,3 +1,4 @@
+![CryptoCoins](https://user-images.githubusercontent.com/49198431/127914652-e9554a51-c94e-4f67-8425-d37ed4c89442.PNG)
 # Propsal for Crypto Web Game 
 #### Covineers Members: 
 * Adem Coklar 

@@ -199,14 +199,12 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
 ![User Table](https://user-images.githubusercontent.com/49198431/127914749-3247ed28-16f6-4b06-a3c4-0d8465ff8808.PNG)
 
 * **Adem**
-    * Summarize what you worked on thus far:
     * For this project, my main focus was the login form, along with helping research the API used in the project. I also assisted in testing the virtual machines and load 	balancers and 
-    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    * 
-    * Issues personally encountered/dealt with
-    * Some issues I found were 	
-
-    * Highlighted learnings/experiences
+    * These are the following issues we solved:
+         * https://github.com/dd482IT/IT490/issues/40 (Created duplicate VMs for Production, done)
+         * https://github.com/dd482IT/IT490/issues/11 (Created Login Form, done)
+         * https://github.com/dd482IT/IT490/issues/41 (Implented Load Balancer, done)
+    * Some issues I found were time schedules. Since it is the Summer, some unexpected issues occured which made me reschedule meeting times. Another would be pushing/pulling to github and figuring out how to use git bash to work the virtual machines.
     * My favorite part was coming together as a group and tackling different tasks, and setting goals for each week. I find that working in a group setting really encourages me to work harder. Seeing our idea grow each week into a actual physical project really made me proud to be on the team I was on.
     
 * **Tyler**

@@ -46,15 +46,15 @@
    * Scrolling background
    
 ### Game Features:
-  * Player/Game is always moving forward
-  * Enemies/obstacles spawn 
-  * Difficulty based on coin selected
-  * Speed adjusts as time passes
+  * Player/Game is always moving forward [COMPLETED]
+  * Enemies/obstacles spawn  [COMPLETED]
+  * Difficulty based on coin selected [COMPLETED]
+  * Speed adjusts as time passes 
 
 
 ### Game Development:
-  * Using WebGL
-  * Developed in Unity 
+  * Using WebGL [COMPLETED]
+  * Developed in Unity [COMPLETED]
 	
 ### User Profile:
 * Display username [COMPLETED]

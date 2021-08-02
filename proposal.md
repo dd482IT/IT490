@@ -214,12 +214,12 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
 * **Patryk**
     * The Game is most of what I worked on. It was made entirely with Unity and as for the server part I worked on the game client parts while Andrew and Daniel worked to implement the server-side parts such as MQ and DB. 
       - [Game Branch](https://github.com/dd482IT/IT490/tree/Game)
-    * Issues/ Project Board Items
-    - [Project Board 1](https://github.com/dd482IT/IT490/projects/1?card_filter_query=assignee%3Amisl3d)
-    - [Project Board 2](https://github.com/dd482IT/IT490/projects/1?card_filter_query=author%3Amisl3d)
+    * Issues/ Project Board Items 
+    	- [Project Board 1](https://github.com/dd482IT/IT490/projects/1?card_filter_query=assignee%3Amisl3d)
+    	- [Project Board 2](https://github.com/dd482IT/IT490/projects/1?card_filter_query=author%3Amisl3d)
     * Issues I dealt with: 
-    - Personal Server used for testing was configured alittle differently so when testing WebRequest and WebSends, Unity would disagree with http and only accepted https. (Took me 1+ Hours to figure that out 😭)
-    - Wasted about  3 days for the first version of the game which was going to be more subway surfer style of top down a endless runner. If I proceeded with that route it would have probably been terrible, but switched to the doge to moon concept instead and it worked out.
+    	- Personal Server used for testing was configured alittle differently so when testing WebRequest and WebSends, Unity would disagree with http and only accepted https. (Took me 1+ Hours to figure that out 😭) 
+  		- Wasted about  3 days for the first version of the game which was going to be more subway surfer style of top down a endless runner. If I proceeded with that route it would have probably been terrible, but switched to the doge to moon concept instead and it worked out.
     * Learnings and Experiences:
       - Unity and C++ 
       - tiny bit of php invloding webrequests and sends from Unity

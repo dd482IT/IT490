@@ -153,10 +153,10 @@
   * modified
 
 * **Daniel**
-    * Summarize what you worked on thus far
+    * I worked on a bit of everything in the project but my focus was anything related to rabbitMQ and the API consumer. I assissted my team mates where I could and gave out taskes 	   where neccessary. 
     * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    * Issues personally encountered/dealt with 
-    * Highlighted learnings/experiences
+    * The biggest issues I encountered were pulling data from requests, not knowing they were json encoded. I also had extreme difficulty with rabbitMQ queue locks and put me in situations where the project would just stop functioning. The smallest issue was configuring new VMS for the load balancer making sure all the packages were present. 
+    * The major lessons learned from working on the project is how services like AWS (VMs) allow companies to easily get their services up and running. I also gained experience making my own work flow, managment style and organization using github. On the more technical side, I learned a lot about JSON, the capability of VMS, how an API works and how to encporate them into projects. 
     
 * **Andrew**
     * Summarize what you worked on thus far

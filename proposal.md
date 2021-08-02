@@ -1,7 +1,7 @@
 
 # Propsal for Crypto Web Game 
 #### Covineers Members: 
-* .[Adem Coklar](https://github.com/ac785)
+* [Adem Coklar](https://github.com/ac785)
 * [Daniel Daszkiewicz](https://github.com/dd482IT) 
 * [Kevin Delgado](https://github.com/kad45)  
 * [Andrew Kinzler](https://github.com/ak2425-njit)    

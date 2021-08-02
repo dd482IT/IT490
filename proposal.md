@@ -199,11 +199,15 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
 ![User Table](https://user-images.githubusercontent.com/49198431/127914749-3247ed28-16f6-4b06-a3c4-0d8465ff8808.PNG)
 
 * **Adem**
-    * Summarize what you worked on thus far
+    * Summarize what you worked on thus far:
+    * For this project, my main focus was the login form, along with helping research the API used in the project. I also assisted in testing the virtual machines and load 	balancers and 
     * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    * Issues personally encountered/dealt with 
+    * 
+    * Issues personally encountered/dealt with
+    * Some issues I found were 	
 
     * Highlighted learnings/experiences
+    * My favorite part was coming together as a group and tackling different tasks, and setting goals for each week. I find that working in a group setting really encourages me to work harder. Seeing our idea grow each week into a actual physical project really made me proud to be on the team I was on.
     
 * **Tyler**
     * Summarize what you worked on thus far
@@ -211,7 +215,7 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
     * Issues personally encountered/dealt with 
     * Highlighted learnings/experiences
     
-* **Patryk**   
+* **Patryk**
 
     ![Gif](https://github.com/dd482IT/IT490/blob/678164c484d018ebe17737fce4f1a3da67d80da9/Images/Game.gif)  
     

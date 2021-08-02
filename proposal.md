@@ -211,8 +211,11 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
     * Issues personally encountered/dealt with 
     * Highlighted learnings/experiences
     
-* **Patryk**
-    ![Gif](https://github.com/dd482IT/IT490/blob/678164c484d018ebe17737fce4f1a3da67d80da9/Images/Game.gif)
+* **Patryk**   
+
+    ![Gif](https://github.com/dd482IT/IT490/blob/678164c484d018ebe17737fce4f1a3da67d80da9/Images/Game.gif)  
+    
+    
     * The Game is most of what I worked on. It was made entirely with Unity and as for the server part I worked on the game client parts while Andrew and Daniel worked to implement the server-side parts such as MQ and DB. 
       - [Game Branch](https://github.com/dd482IT/IT490/tree/Game)
       - [Scripts](https://github.com/dd482IT/IT490/tree/Game/Assets/Scripts)

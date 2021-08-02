@@ -19,27 +19,27 @@
 
 ## Features: 
 ### Core Reqs:
-  * User Role:
-    * Users will be able to register
-    * Users will be able to login
-    * Users will be able to update their profile
-    * Users will be able to logout (session will be destroyed appropriately)
-    * Passwords will not be stored in plaintext
+  * User Role: 
+    * Users will be able to register [COMPLETED]
+    * Users will be able to login [COMPLETED]
+    * Users will be able to update their profile [COMPLETED]
+    * Users will be able to logout (session will be destroyed appropriately) [COMPLETED]
+    * Passwords will not be stored in plaintext [COMPLETED]
 
-  * Admin Role:
+  * Admin Role: [NOT COMPLETED]
     * Enable/Disable crypto 
     * User management
     * Game mechanics (spawn, difficulty) 
 
 ### Game Functionality: 
-  * User will be able to see the performance of the coin in that day 
-  * Will show the changes in game difficulty
-    * Speed
-    * Amount of Obstacles
-    * Point Amplifier 
-   * The Higher the value of the coin the higher the reward
-   * The Higher the value of the coin the lower its spawn rate
-   * User collects points randomly (calculated based on time/distance)
+  * User will be able to see the performance of the coin in that day [COMPLETED]
+  * Will show the changes in game difficulty [COMPLETED]
+    * Speed [COMPLETED]
+    * Amount of Obstacles [COMPLETED]
+    * Point Amplifier [COMPLETED]
+   * The Higher the value of the coin the higher the reward [COMPLETED]
+   * The Higher the value of the coin the lower its spawn rate [COMPLETED]
+   * User collects points randomly (calculated based on time/distance) [COMPLETED]
    * User trades credit for crypto or spend the credits in the store 
    * Level generates indefinitely >> 3 Lanes Repeating with random obstacles in the way 
    * Spawn obstacles towards the player 
@@ -57,35 +57,35 @@
   * Developed in Unity 
 	
 ### User Profile:
-* Display username
+* Display username [COMPLETED]
 * Change password
-* Balance of Dogecoin
-* Balance of “credits”
-* Highest Score/Distance
-* Change Playable Character 
-* Upgrades/Boosts
-* Cash out credits to crypto or store cryptoCrypto is only converted to game credit no IRL money is involved  (players can choose to keep dogecoin in hopes they can exchange it for more credits in the future) 
+* Balance of Dogecoin 
+* Balance of “credits” [COMPLETED]
+* Highest Score/Distance [ATEMPTED BUT NOT COMPLETED]
+* Change Playable Character [NOT COMPLETED]
+* Upgrades/Boosts [NOT COMPLETED]
+* Cash out credits to crypto or store cryptoCrypto is only converted to game credit no IRL money is involved  (players can choose to keep dogecoin in hopes they can exchange it for more credits in the future) [NOT COMPLETED]
 * Crypto will be adjusted based on the base crypto (Dogecoin)
 
 ### Home page
 * Record some score/history metrics of players (entice new players)
 	→ Show the amounts of crypto given out from most to least
 * Show current crypto info from db cache
-* Scoreboards showing all time points earned by top 10 players
-* Store Page [should be tracked in database] (When buying, an authentication flow may be needed while calling a different endpoint)
-* Show user’s balance (shown in points and crypto) user can buy crypto when they feel is right
-* Updates when a purchase is made
-* Let users buy boosts that can be 1 time use per game 
-* System will prompt the user to activate it
-* coin multipliers 
-* extra lives 
-* less enemies/obstacles
-* Search for “items”
-* Sort by price and name.
-* Purchase item directly from shop (no cart)
-* Confirm button
-* Follow the respective process depending on the “currency” of the item (credits vs crypto) 
-### Admin Page
+* Scoreboards showing all time points earned by top 10 players [ATTEMPTED WITH TOP 3 PlAYERS]
+* Store Page [should be tracked in database] (When buying, an authentication flow may be needed while calling a different endpoint) [ATTEMPTED, ONLY STYLE/HTML]
+* Show user’s balance (shown in points and crypto) user can buy crypto when they feel is right [NOT COMPLETED, ONLY SHOWS POINTS (COINS)]
+* Updates when a purchase is made [NOT COMPLETED]
+* Let users buy boosts that can be 1 time use per game [NOT COMPLETED]
+* System will prompt the user to activate it [NOT COMPLETED]
+* coin multipliers [COMPLETED]
+* extra lives [NOT COMPLETED]
+* less enemies/obstacles [NOT COMPLETED]
+* Search for “items” [NOT COMPLETED]
+* Sort by price and name. [NOT COMPLETED]
+* Purchase item directly from shop (no cart) [NOT COMPLETED]
+* Confirm button [NOT COMPLETED]
+* Follow the respective process depending on the “currency” of the item (credits vs crypto) [NOT COMPLETED]
+### Admin Page [NOT COMPLETED]
 * Can add different items in the “store” like player models or skins
 * Can change the value of store items 
 * Can remove items
@@ -104,19 +104,19 @@
 * A disabled user can’t login
 * A frozen user can’t spend/acquire points
 
-### API
+### API [COMPLETED]
 * API would be called every hour to update value of crypto currencies (or based on the limit the API has) 
 * API will be used to send/receive dogecoin
 
 ### Database
-* **Users**
+* **Users** [COMPLETED]
   * id
   * username 
   * email
   * created
   * modified
   * password
-* **Wallet**
+* **Wallet** [COMPLETED]
   * id (primary key)
   * userId (foreign key)
   * crypto
@@ -124,7 +124,7 @@
   * items
   * created
   * modified* 
-* **Items**
+* **Items** [NOT COMPLETED]
   * id
   * name
   * description
@@ -135,14 +135,14 @@
   * img_url?
   * created
   * modified
-* **User Items**
+* **User Items** [NOT COMPLETED]
   * id
   * user_id
   * item_id
   * quantity
   * created
   * modified
-* **Crypto**
+* **Crypto** [NOT COMPLETED]
   * id (internal id if needed)
   * shortname
   * reference_pair? (doge/usd ex)

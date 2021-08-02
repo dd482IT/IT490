@@ -162,8 +162,8 @@
     * Here is an image of the game using the API (entire game created by Patryk
     * ![540add50d038f2ffab7902320f7ca594](https://user-images.githubusercontent.com/70596795/127909782-7dce742e-50e0-4faa-a22e-be2eb9023d30.png)
     
-    *Here is a big change in the API functionality. Calling the API for each coin invidiually cause queue locks so we make a batch call instead. 
-    *https://github.com/dd482IT/IT490/commit/aa1c7f7cd5e700163aa27fc0bd802cf532966ca7#diff-0e11d894baa5b2a08944cd8bd2bb509867e0b5fe7257abf9f616626e45c26f10
+    * Here is a big change in the API functionality. Calling the API for each coin invidiually cause queue locks so we make a batch call instead. 
+    * https://github.com/dd482IT/IT490/commit/aa1c7f7cd5e700163aa27fc0bd802cf532966ca7#diff-0e11d894baa5b2a08944cd8bd2bb509867e0b5fe7257abf9f616626e45c26f10
     
 
     

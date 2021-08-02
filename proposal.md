@@ -195,6 +195,7 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
 ![CryptoCoins](https://user-images.githubusercontent.com/49198431/127914652-e9554a51-c94e-4f67-8425-d37ed4c89442.PNG)
 
 ![Wallet](https://user-images.githubusercontent.com/49198431/127914736-47a5bc6f-2cc5-4a98-904b-1f0447dae64e.PNG)
+
 ![User Table](https://user-images.githubusercontent.com/49198431/127914749-3247ed28-16f6-4b06-a3c4-0d8465ff8808.PNG)
 
 * **Adem**

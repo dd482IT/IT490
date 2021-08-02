@@ -172,11 +172,18 @@
 
     
 * **Andrew**
-    * Summarize what you worked on thus far
-    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    * Issues personally encountered/dealt with 
-    * Highlighted learnings/experiences
-    
+•	I worked primarily in the back-end side of the project. I handled almost everything involving the Database server with some occasional help from Daniel and I helped setting up the API server.
+•	Issues I worked on:
+o	Database Consumer [https://github.com/dd482IT/IT490/blob/API/db/Consumer.php]
+o	Fetch and Store Crypto Values [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/get_all.php] [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/set_coin_value.php]
+o	Register/Login [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/register.php] [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/login.php]
+o	Wallet 
+	Storing coins collect in game [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/deposit.php]
+o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_call.php]
+•	One of the biggest issues I faced was figuring out how to implement the information being passed to me by the API. For a while I thought about turning the object into a string then using the substr method to pull the value of the cryptocurrency, but after talking with my team members I figured out all I had to do was use json decode to turn the object into an accessible associative array.
+•	What I learned the most from this project was the intricacies of communicating between multiple computers and how easily things can break down. We saw that if one computer were to go down then it would take down our whole website. Another thing I learned about were APIs prior to this project I knew very little about them, but now I know how to implement one and pull information from it.
+
+
 * **Adem**
     * Summarize what you worked on thus far
     * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]

@@ -193,6 +193,7 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
 •	What I learned the most from this project was the intricacies of communicating between multiple computers and how easily things can break down. We saw that if one computer were to go down then it would take down our whole website. Another thing I learned about were APIs prior to this project I knew very little about them, but now I know how to implement one and pull information from it.
 
 ![CryptoCoins](https://user-images.githubusercontent.com/49198431/127914652-e9554a51-c94e-4f67-8425-d37ed4c89442.PNG)
+
 ![Wallet](https://user-images.githubusercontent.com/49198431/127914736-47a5bc6f-2cc5-4a98-904b-1f0447dae64e.PNG)
 ![User Table](https://user-images.githubusercontent.com/49198431/127914749-3247ed28-16f6-4b06-a3c4-0d8465ff8808.PNG)
 

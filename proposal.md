@@ -208,10 +208,14 @@ o	API Last Call [https://github.com/dd482IT/IT490/blob/API/db/DBFunctions/last_c
     * My favorite part was coming together as a group and tackling different tasks, and setting goals for each week. I find that working in a group setting really encourages me to work harder. Seeing our idea grow each week into a actual physical project really made me proud to be on the team I was on.
     
 * **Tyler**
-    * Summarize what you worked on thus far
-    * List links to issue/PR items you contributed to along with their status (pending, done) [todo isn't contributed to yet]
-    * Issues personally encountered/dealt with 
-    * Highlighted learnings/experiences
+    * I worked on the front end of the website including the html, css, and design of the user facing pages. Pages such as login and home page and even the store page. I also worked with Daniel on hosting the site on my AWS servers for load balancing. Other than that I mostly helped with bug fixing and helping on minor stuff.
+    * We worked on these issues with varoius amounts of contribution
+    	* https://github.com/dd482IT/IT490/issues/18 (Home Page)
+    	* https://github.com/dd482IT/IT490/issues/19 (Store Page)
+    	* https://github.com/dd482IT/IT490/issues/41 (Load Balancer)
+    	* ![chrome_1MzlJ9FP33](https://user-images.githubusercontent.com/50150225/127938884-fb7cf7c5-51f3-4403-86d5-be4a8bdf1581.png)
+
+    * Managing time is always a very difficult portion of group projects but our leader Daniel managed to organize us and we had time for everything and met up together frequently. Web developing is something I know I dont want do but bootstrap 4 made it easier to have a nice looking website. Researching different solutions to problems opened my eyes to how many ways there are to do things and how much AWS has consolidated all of these into one place. Learning AWS was also very valuable for me because i plan on leaning in that area in the future.
     
 * **Patryk**
 
